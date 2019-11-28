@@ -11,7 +11,7 @@
 
 <body>
 
-    <ul>
+    <!-- <ul>
         <li>
             <img src="" alt=""><span>2</span>3<span></span>
         </li>
@@ -21,7 +21,7 @@
         <li>
             <span>1</span><span>2</span>3<span></span>
         </li>
-    </ul>
+    </ul> -->
     <script>
         $.ajax({
             type: "get",
@@ -37,7 +37,7 @@
         function create(str) {
             let html = str.map(item => {
                 return `
-                <li>   <img src="${item.img}" alt=""><span>${item.title}</span><span>${item.time}</span>> </li>
+                <li><img src="${item.img}" alt=""><span>${item.title}</span><span>${item.time}</span>> </li>
                 `
             }).join("");
             $("ul").html(html);

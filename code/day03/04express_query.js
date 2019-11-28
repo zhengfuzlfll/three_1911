@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static("./")); /* 静态资源服务器 */
 
 
-/* 带路径   接口测试  postman   apidebug*/
+/*-------- 带路径   接口测试  postman   apidebug*/
 app.get("/", (req, res) => {
     res.send("欢迎访问服务器");
 })
@@ -30,7 +30,7 @@ app.get("/index", (req, res) => {
 
 
 
-/* 返回商品数据----- */
+/* ----------返回商品数据----- */
 app.get("/goodlist", (req, res) => {
     let goodlist = [{
             "gid": "1",

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./js/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <!-- <script src="../../node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="./js/bootstrap.js"></script>
+</head>
+
+<body>
+    <input type="button" name="" value="点击获取数据">
+    <div class="containter">
+        <ul class="list-group">
+            <!-- <li class="list-group-item active">Cras justo odio</li> -->
+            <!-- <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li> -->
+        </ul>
+    </div>
+
+    <script>
+        $("input").click(() => {
+            $.ajax({
+                /*引入的文件要与静态资源服务器在同一目录下   开启一个静态资源服务器2019   开启后端的请求数据的服务器2020  */
+                type: "get",
+                url: "http://127.0.0.1:2020",
+                /* 请求的路径为后端的路径 */
+                // data: "data",
+                dataType: "json",
+                success: function (response) {
+                    console.log(response);
+                    create(response);
+                }
+            });
+        })
+
+        function create(str) {
+            let html = str.data.map(item => {
+                return `
+                ${item.abstract?`<li class="list-group-item">${item.abstract}</li>`:""}
+                `
+            }).join("");
+            $(".list-group").html(html)
+        }
+    </script>
+</body>
+
+</html>

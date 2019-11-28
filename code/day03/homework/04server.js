@@ -50,7 +50,7 @@ app.get("/good", (req, res) => {
     // console.log(req.query); /* {gid:"1",color:"red"} */
     let {
         gid
-    } = req.query;
+    } = req.query; /* 以对象形式获取参数 */
 
     let goodlist = list.filter((item, index) => {
         return item.gid == gid;
