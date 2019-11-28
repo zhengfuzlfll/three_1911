@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <img src="" alt=""><span>2</span>3<span></span>
+        </li>
+        <li>
+            <span>1</span><span>2</span>3<span></span>
+        </li>
+        <li>
+            <span>1</span><span>2</span>3<span></span>
+        </li>
+    </ul>
+    <script>
+        $.ajax({
+            type: "get",
+            url: "./data/json.json",
+            // data: "data",
+            dataType: "json",
+            success: function (response) {
+                console.log(response);
+                create(response);
+            }
+        });
+
+        function create(str) {
+            let html = str.map(item => {
+                return `
+                <li>   <img src="${item.img}" alt=""><span>${item.title}</span><span>${item.time}</span>> </li>
+                `
+            }).join("");
+            $("ul").html(html);
+        }
+    </script>
+</body>
+
+</html>
