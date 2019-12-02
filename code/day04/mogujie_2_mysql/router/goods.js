@@ -2,11 +2,10 @@ const express = require("express");
 
 const Router = express.Router();
 /* 引入mysql模块 */
-const mysql = require("mysql");
-
-/* 导入  mysql 模块 */
+// const mysql = require("mysql");
 const query = require("../db/mysql");
 console.log(query);
+
 
 
 
@@ -61,30 +60,12 @@ console.log(query);
 
 /*---------- 添加数据库操作-------- */
 
-/* 连接池 */
 
-// let pool = mysql.createPool({
-//     host: "127.0.0.1",
-//     user: "root",
-//     password: "",
-//     database: "common",
-//     charset: "UTF8_GENERAL_CI",
-//     /*设置编码 */
-//     multipleStatements: true /* 允许写多个语句 */
-// })
 
 /* 查询所有数据 */
 Router.get("/", (req, res) => {
     let sql = "SELECT * FROM cart";
-    // query()
-    // pool.query(sql, function (err, rows) {
-    //     if (err) throw err;
-    //     // console.log(rows);
 
-    //     /* 查所有数据       get */
-    //     console.log(rows);
-    //     res.send(rows);
-    // })
 })
 
 /* 查询某个数据 */
