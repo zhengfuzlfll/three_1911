@@ -7,8 +7,8 @@
 /* 导入mysql路由 */
 const mysql = require("./mysql");
 /*导入mongoDB */
-// const mongoDB = require("./mongodb");
+const mongo = require("./mongo");
 module.exports = {
     mysql,
-    // mongoDB
+    mongo
 }

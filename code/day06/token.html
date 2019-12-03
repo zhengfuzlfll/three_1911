@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>token</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <!-- <script src="./token.js"></script> -->
+    <!-- <script src="./js/md5.js"></script> -->
+    <script src="./js/jQuery.md5.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>注册页</h2>
+        <form>
+
+            <!-- 用户名 -->
+            <div class="form-group">
+                <label for="exampleInputEmail1">用户名</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <!-- <small id="emailHelp" class="form-text text-muted"></small> -->
+                <div class="valid-feedback">
+
+                </div>
+            </div>
+
+            <!-- 密码 -->
+            <div class="form-group">
+                <label for="exampleInputPassword1">密码</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <!-- 提示信息  正确 -->
+                <div class="valid-feedback">
+
+                </div>
+            </div>
+
+            <!-- 重复密码 -->
+            <div class="form-group">
+                <label for="exampleInputPassword2">重复密码</label>
+                <input type="password" class="form-control" id="exampleInputPassword2">
+                <!-- 提示信息    错误-->
+                <div class="invalid-feedback">
+
+                </div>
+            </div>
+
+            <!-- 七天免登录 -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck1">七天免登录</label>
+            </div>
+            <!-- 注册按钮 -->
+            <button type="button" class="btn btn-primary">注册</button>
+        </form>
+    </div>
+
+
+
+    <script>
+        /* 用户名 */
+        let usernameReg = /^[\da-zA-Z]{3,20}$/
+        $("#exampleInputEmail1").on("blur", () => {
+            // console.log(666);
+            let username = $("#exampleInputEmail1").val().trim();
+
+            if (username) {
+                /* 正则 */
+                if (usernameReg.test(username)) {
+
+                    $("#exampleInputEmail1").addClass("is-valid").removeClass("is-invalid")
+                        .next().addClass("valid-feedback").html("验证通过")
+                        .removeClass("invalid-feedback");
+
+                } else {
+                    $("#exampleInputEmail1").addClass("form-control is-invalid")
+                        .next().addClass("invalid-feedback")
+                        .html("验证不通过");
+                }
+
+
+            } else {
+                $("#exampleInputEmail1").addClass("form-control is-invalid").next().addClass("invalid-feedback")
+                    .html("请输入用户名")
+            }
+
+
+        })
+
+
+
+        /* 密码 */
+        let passwordReg = /^[\da-zA-Z]{6,20}$/
+        $("#exampleInputPassword1").on("blur", () => {
+            // console.log(666);
+            let password = $("#exampleInputPassword1").val().trim();
+
+            if (password) {
+                /* 正则 */
+                if (passwordReg.test(password)) {
+
+                    $("#exampleInputPassword1").addClass("is-valid").removeClass("is-invalid")
+                        .next().addClass("valid-feedback").html("验证通过")
+                        .removeClass("invalid-feedback");
+
+                } else {
+                    $("#exampleInputPassword1").addClass("form-control is-invalid")
+                        .next().addClass("invalid-feedback")
+                        .html("验证不通过");
+                }
+
+
+            } else {
+                $("#exampleInputPassword1").addClass("form-control is-invalid").next().addClass(
+                        "invalid-feedback")
+                    .html("请输入密码")
+            }
+
+
+        })
+
+        /* 重复密码 */
+        $("#exampleInputPassword2").on("blur", () => {
+            let password2 = $("#exampleInputPassword2").val().trim();
+            let password = $("#exampleInputPassword1").val().trim();
+            if (password2) {
+                if (password2 == password) {
+                    $("#exampleInputPassword2").addClass("is-valid").removeClass("is-invalid")
+                        .next().addClass("valid-feedback").html("验证通过")
+                        .removeClass("invalid-feedback");
+                } else {
+                    $("#exampleInputPassword2").addClass("form-control is-invalid")
+                        .next().addClass("invalid-feedback")
+                        .html("两次输入密码不一致");
+                }
+
+            } else {
+                $("#exampleInputPassword2").addClass("form-control is-invalid").next().addClass(
+                        "invalid-feedback")
+                    .html("重复密码不能为空")
+            }
+
+
+        })
+
+        /* 点击注册 */
+        $(".btn-primary").on("click", () => {
+            if ($("#exampleInputEmail1").hasClass("is-valid") &&
+                $("#exampleInputPassword1").hasClass("is-valid") &&
+                $("#exampleInputPassword2").hasClass("is-valid")) {
+
+                let password = $("#exampleInputPassword1").val().trim();
+                let username = $("#exampleInputEmail1").val().trim();
+
+                $.ajax({
+                    type: "post",
+                    url: "token.php",
+                    data: {
+                        username: username,
+                        password: $.md5(password),
+                        // $.md5($('#pwd1').val()),
+                    },
+                    dataType: "json",
+                    success: function (response) {
+                        console.log(response);
+                        if ($("#exampleCheck2").prop("checked")) {
+                            console.log(6666666666);
+
+                        } else {
+                            console.log(1111111);
+
+                        }
+
+                    }
+                });
+            } else {
+                alert("请完善信息")
+            }
+
+        })
+
+
+        // $("#exampleCheck2").on("click", () => {
+        //     //    console.log();
+
+        //     // console.log($("#exampleCheck2").prop("checked"));
+        //     if ($("#exampleCheck2").prop("checked")) {
+        //         console.log(6666666666);
+
+        //     } else {
+        //         console.log(1111111111);
+
+        //     }
+        // })
+    </script>
+
+</body>
+
+</html>

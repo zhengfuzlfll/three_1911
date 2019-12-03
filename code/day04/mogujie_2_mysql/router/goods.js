@@ -3,10 +3,14 @@ const express = require("express");
 const Router = express.Router();
 /* 引入mysql模块 */
 // const mysql = require("mysql");
-const query = require("../db/mysql");
-console.log(query);
 
-
+// const query = require("../db/mysql");
+// console.log(query);/* 得到一个函数  [Function: query] */
+const getdata = require("../db/index");
+// console.log(getdata); //{ mysql: [Function: query], mongo: [Function: query]}
+const {
+    mysql: query
+} = getdata; /* 得到一个  mysql  */
 
 
 // let data = [{
@@ -63,22 +67,62 @@ console.log(query);
 
 
 /* 查询所有数据 */
-Router.get("/", (req, res) => {
+Router.get("/", async (req, res) => {
     let sql = "SELECT * FROM cart";
+
+    /*------- 初级写法------- */
+    // query(sql, data => {
+    //     res.send(data);
+    // })
+
+    /* --------中级写法promise --------*/
+    // let p = query(sql); /* 得到一个实例 */
+    // p.then(data => {
+    //     res.send(data);
+    // }).catch(err => {
+    //     console.log(err);
+    //     res.send(err);
+    // })
+
+    /*--------高级写法 ES7 async await------ */
+
+    /* async  返回一个promise对象   await等待promise对象的状态为resolve时的返回结果 */
+    /*用同步的写法实现异步的效果 await 后必须是promise对象
+    await必须写在async 函数中 */
+    let data = await query(sql);
+    res.send(data);
+
 
 })
 
+
+
+
 /* 查询某个数据 */
-Router.get("/:id", (req, res) => {
+Router.get("/:id", async (req, res) => {
     let {
         id
-    } = req.params; /* 获取冬天路由 */
+    } = req.params; /* 获取动态路由 */
     let sql = `SELECT * FROM cart WHERE id=${id}`;
-    pool.query(sql, function (err, rows) {
-        if (err) throw err;
-        console.log(rows);
-        res.send(rows);
-    })
+
+    /* ----------- */
+    // query(sql, data => {
+    //     res.send(data);
+    // })
+
+    /* -------------- */
+    // let p = query(sql); /* 得到一个实例 */
+    // p.then(data => {
+    //     res.send(data);
+    // }).catch(err => {
+    //     console.log(err);
+    //     res.send(err);
+
+    // })
+
+    /* ------------- */
+    let data = await query(sql);
+    res.send(data);
 })
 
 /* post  增 */
