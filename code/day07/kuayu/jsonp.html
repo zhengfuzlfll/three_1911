@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsonp跨域</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2>jsonp跨域</h2>
+    <input type="button" id="btn" value="获取数据">
+    <script>
+        // $("#btn").click(() => {
+        //     /* 不是跨域 */
+        //     /*  http://127.0.0.1:2020/jsonp.html
+        //         http://127.0.0.1:2020/jsonp.html
+        //     */
+        //     $.ajax({
+        //         type: "get",
+        //         url: "/jsonp",
+        //         // data: "data",
+        //         dataType: "json",
+        //         success: function (response) {
+        //             console.log(response);
+
+        //         }
+        //     });
+        // })
+
+
+        // $("#btn").click(() => {
+        //     /*  http://127.0.0.1:2020/jsonp.html
+        //         http://127.0.0.1:2020/jsonp.html
+        //     */
+        //     $.ajax({
+        //         type: "get",
+        //         /* 跨域  开启两个服务器  静态资源服务器+数据*/
+        //         url: "http://127.0.0.1:2050/jsonp",
+        //         // data: "data",
+        //         dataType: "jsonp",
+        //         jsonp: "callback",
+        //         success: function (response) {
+        //             console.log(response);
+        //         }
+        //     });
+        // })
+    </script>
+    <!-- -------原生js写法         开启两个服务器 静态+数据-------- -->
+    <!-- <script>
+        function getdata(data) {
+            console.log(data);
+        }
+    </script>
+
+
+    <script src="http://127.0.0.1:2050/jsonp?callback=getdata"></script> -->
+
+    <!-- 改进-----按需加载 -->
+    <script>
+        // /* 声明一个全局函数    1 */
+        // function getdata(data) {
+        //     console.log(data);
+        // };
+
+        // (() => {
+        //     ///* 全局函数  2 */
+        //     let script = null;
+        //     window.getdata = function (data) {
+        //         console.log(data);
+        //         // /* script 标签用完即删，避免过多的DOM节点 */
+        //         document.body.removeChild(script);
+        //     };
+
+        //     $("#btn").click(() => {
+        //         script = document.createElement("script")
+        //         script.src = "http://127.0.0.1:2050/jsonp?callback=getdata"
+        //         document.body.appendChild(script);
+        //     })
+
+        // })();
+    </script>
+
+    <script>
+        /* jQuery写法         后端开放jsonp接口*/
+        $("#btn").click(() => {
+            $.ajax({
+                type: "get",
+                url: "http://127.0.0.1:2050/jsonp",
+                // data: "data",
+                dataType: "jsonp",
+                jsonp: "callback",
+                success: (response) => {
+                    console.log(response);
+                }
+            });
+        })
+
+
+        /* 
+         $.ajax({
+            type: 'get',
+            url: 'http://localhost:1912/jsonp', //'Access-Control-Allow-Origin' 现在就属于跨域
+            dataType: 'jsonp',
+            jsonp: 'callback',
+            success: data => {
+                console.log(data);
+            }
+        })
+        */
+    </script>
+
+</body>
+
+</html>

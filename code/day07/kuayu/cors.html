@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cors跨域</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 后端设置响应头，浏览器 + 服务器同时支持 -->
+    <h1>cors跨域</h1>
+    <input type="button" id="btn" value="获取数据">
+
+    <script>
+        $("#btn").click(() => {
+            $.ajax({
+                type: "get",
+                url: "http://127.0.0.1:2050/cors",
+                // data: "data",
+                // dataType: "jsonp",
+                // jsonp: "callback",
+                success: (response) => {
+                    console.log(response);
+                }
+            });
+        })
+
+        //  <!-- 网址正则 -->
+        // let urlReg = /^([hH][tT]{2}[pP]:\/\/|[hH][tT]{2}[pP][sS]:\/\/|www\.)(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\/])+$/;
+        // console.log(urlReg.test("http://localhost"));
+        // // http: //127.0.0.1:2030/cors.html
+    </script>
+
+
+
+</body>
+
+</html>
