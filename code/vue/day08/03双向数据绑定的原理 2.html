@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>双向数据绑定的原理</title>
+</head>
+<!-- 双向数据绑定的原理------属性的特性 -->
+
+<body>
+    <!-- <div id="app">
+        <p>{{msg}}</p>
+        <input type="text" v-model="msg">
+    </div>
+
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                msg: "静静"
+            }
+        })
+    </script> -->
+
+
+
+    <!-- 
+
+        * 修改属性特性：
+            Object.defineProperty(target,prop,descriptor)
+                * taget: 目标对象 data
+                * prop: 目标对象的属性 age
+                * descriptor： 属性特性
+                    * configurable  可配置型    Boolean     控制writable&enumerable的开关
+                    * enumerable    可枚举性    Boolean
+                    * writable      可写性      Boolean
+                    * value         值          Any
+
+        * 查看属性特性：
+            Object.getOwnpropertyDescriptor(data,prop)
+
+ -->
+
+
+
+
+
+    <script>
+        let data = {
+            name: 'jingjing',
+            age: 28
+        }
+        data.adr = "百色";
+
+        console.log(data);
+
+        Object.defineProperty(data, "age", {
+            writable: false /* 不可写 */
+        })
+
+        Object.defineProperty(data, "name", {
+            enumerable: false /*不可枚举 */
+        })
+
+        // for (let key in data) {
+        //     console.log(data[key]);
+
+        // }/* 28 百色 */
+
+
+        /* 添加一个新的属性 */
+        Object.defineProperty(data, "like", {
+            value: "篮球" /* 默认不可枚举，不可修改*/
+        });
+
+
+        /* 查看一个属性对应的特性（是否可枚举、是否可修改） */
+        let obj = Object.getOwnPropertyDescriptor(data, "like")
+        console.log(obj);
+
+        /* 
+        值属性：（有值的属性）
+
+        响应式属性（没有值的属性）------------√
+        */
+
+        /* 
+            getter和setter 主要用来设置监听
+         */
+        
+    </script>
+
+</body>
+
+</html>

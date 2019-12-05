@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getter和setter</title>
+</head>
+
+<body>
+    <!-- 
+        属性特性 
+            getter
+            setter      监听属性修改
+    
+    -->
+    <div id="app">
+
+    </div>
+
+    <script>
+        let data = {
+            username: "dingding"
+        }
+        let app = document.querySelector("#app");
+        // console.log();
+
+        let user = {
+
+        }
+
+        app.innerText = data.username;
+
+        /* 1、读取属性，执行get 方法，，值取决于返回值
+           2、设置属性，执行set 方法 set 方法的参数就是
+                */
+        Object.defineProperty(user, "username", {
+            get() {
+                /* 读取值触发 */
+                /* get 和set之后，data就没有用了，所以另外定义一个user */
+                /* 监听内容发生变化 */
+                /*调用user 得到data的值 */
+                console.log("getter");
+                return data.username;
+            },
+            set(val) {
+                /* 设置值触发 */
+                /* 修改时，值传过来 */
+                /* 设置变化的内容  显示到对应位置 */
+                console.log("setter", val);
+                data.username = val;
+                app.innerText = val;
+            }
+        })
+
+
+        
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

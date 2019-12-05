@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05常用指令</title>
+</head>
+
+<body>
+    <script src="../vue.js"></script>
+    <div id="app">
+
+        <h2>1、双花括号绑定{{}}</h2>
+        <p>{{msg}}</p>
+        <p>{{num+1}}</p>
+        <!-- <input type="text" v-model="msg"> -->
+
+        <h2>2、v-­once 绑定节点，数据就不能改变</h2>
+        <p v-once>{{msg}}</p>
+
+        <h2>3、v-­html绑定含有便签的元素，数据就可以渲染出来 innerHTML 防止xss攻击</h2>
+        <p v-html="str"></p>
+
+        <h2>4、 v-­bind绑定属性值</h2>
+        <img v-bind:src="url" alt="">
+        <img :src="url" alt=""><!-- 简写 -->
+
+        <h2>5、v-on 事件绑定指令</h2>
+        <input type="button" value="-" v-on:click="cut">
+        <input type="text" :value="num">
+        <input type="button" value="+" @click="add"><!-- 简写 -->
+    </div>
+
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                /* 存放数据*/
+                msg: "静静",
+                str: `<span style="color:#58bc58;">vuejs</span>`,
+                url: 'https://cn.vuejs.org/images/logo.png',
+                num: 10
+            },
+            methods: {
+                /* 存放方法 */
+                add() {
+                    /* this 指向VM实例 */
+                    this.num++
+                },
+                cut() {
+                    this.num--;
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

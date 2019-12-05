@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06v-for遍历数组和对象</title>
+    <script src="../vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <ul>
+            <li v-for='(item,index) in person'>姓名：{{item.name}}，年龄：{{item.age}}</li>
+        </ul>
+
+        <ul>
+            <li v-for='(value,key,index) in goods'>属性是：{{key}}，属性值是：{{value}}，{{index}}</li>
+        </ul>
+    </div>
+
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                person: [{
+                    name: "马云",
+                    age: 16
+                }, {
+                    name: "马化腾",
+                    age: 14
+                }, {
+                    name: "李彦宏",
+                    age: 56
+                }, ],
+
+                goods: {
+                    id: 1,
+                    name: "华为",
+                    price: 8999,
+                    color: "玫瑰金"
+                }
+            }
+
+        })
+    </script>
+
+</body>
+
+</html>
