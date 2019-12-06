@@ -16,10 +16,28 @@
 
     <script>
         /*  */
+        // $("#btn").click(() => {
+        //     $.ajax({
+        //         type: "get",
+        //         url: "http://127.0.0.1:2050/text",
+        //         // data: "data",
+        //         // dataType: "jsonp",
+        //         // jsonp: "callback",
+        //         dataType: "json",
+        //         success: (response) => {
+        //             console.log(response);
+        //         }
+        //     });
+        // })
+
+        //      /common/catelist/?cateid=60532/
+
+
+
         $("#btn").click(() => {
             $.ajax({
                 type: "get",
-                url: "http://127.0.0.1:2050/text",
+                url: "http://127.0.0.1:2050/text/common/catelist/?cateid=60532/",
                 // data: "data",
                 // dataType: "jsonp",
                 // jsonp: "callback",

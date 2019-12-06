@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todolist</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* button,
+        input {
+            outline: none;
+            background: none;
+         border: none; 
+        } */
+
+        input {
+            background: none;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            outline: none;
+            border: 1px solid #ccc;
+            background: none;
+        }
+
+        button:focus {
+            outline: 0;
+            /* 去掉蓝色边框 */
+        }
+
+        /* input:focus {
+            border: none;
+        } */
+
+        #addMsg {
+            background: green;
+            /* width: 20px; */
+            /* padding-left: 10px;
+            padding:  */
+            padding: 5px 15px;
+            /* height: 20px; */
+            color: white;
+        }
+
+        .input input {
+            padding: 3px 0px;
+        }
+
+        #inputMsg {
+            width: 877px;
+        }
+
+        .input {
+            margin-top: 20px;
+        }
+
+        .btnDel {
+            background: red;
+            color: white;
+            padding: 0px 8px;
+        }
+
+        .btnFinish {
+            padding: 0px 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="inputMsg"><!-- 输入 -->
+            <input type="date" id="date"><!-- 日期 -->
+            <input type="button" value="添加" id="addMsg"><!-- 添加按钮 -->
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"><input type="checkbox">全选</th>
+                    <th scope="col">#</th>
+                    <th scope="col">待办事项</th>
+                    <th scope="col">预计完成时间</th>
+                    <th scope="col">是否完成</th>
+                    <th scope="col">操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+
+                    <th scope="row"> <input type="checkbox"></th>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><button class="btnFinish">完成</button><button class="btnDel">删除</button></td>
+                </tr>
+                <tr>
+                    <th scope="row"> <input type="checkbox"></th>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><button class="btnFinish">完成</button><button class="btnDel">删除</button></td>
+                </tr>
+                <tr>
+                    <th scope="row"> <input type="checkbox"></th>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td><button class="btnFinish">完成</button><button class="btnDel">删除</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

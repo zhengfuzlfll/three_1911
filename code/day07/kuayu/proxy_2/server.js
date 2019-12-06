@@ -22,8 +22,21 @@ app.use((req, res, next) => {
 
 /* --------开启两个服务器-静态+ 代理-----    */
 /* https://papi.jiemian.com/page/api/index/indexajax */
-app.get('/text', proxy({
-    target: "http://g.58.com/common/catelist/?cateid=60532/",
+// app.get('/text', proxy({
+//     target: "http://g.58.com/common/catelist/?cateid=60532/",
+//     /* 是否修改原网址，true为修改，false不可修改 */
+//     changeOrigin: true,
+//     pathRewrite: {
+//         "^/text": "/"
+//     }
+
+// }), (res, req) => {
+//     res.send(data)
+// })
+
+
+app.get('/text/*', proxy({
+    target: "http://g.58.com",
     /* 是否修改原网址，true为修改，false不可修改 */
     changeOrigin: true,
     pathRewrite: {
@@ -33,7 +46,6 @@ app.get('/text', proxy({
 }), (res, req) => {
     res.send(data)
 })
-
 
 
 

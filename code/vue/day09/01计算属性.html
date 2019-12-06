@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="../vue.js"></script>
+    <div id="app">
+
+
+        <!-- 总分单向绑定 -->
+        语文:<input type="text" v-model="yw">
+        数学:<input type="text" v-model="sx"></br>
+        <!-- 普通 -->
+        总分（单向）:<input type="text" v-model="sum1()"></br>
+        <!-- 计算属性，调用不用写括号（） -->
+        总分（单向）:<input type="text" v-model="sum2"></br>
+
+        总分（双向）:<input type="text" v-model="sum3"></br>
+        总分（双向 watch）:<input type="text" v-model="zf">
+    </div>
+
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            /* 数据 */
+            data: {
+                yw: 90,
+                sx: 80,
+                zf: 0
+            },
+            /* 方法 */
+            methods: {
+                sum1() {
+                    console.log("sum11");
+
+                    return this.yw * 1 + this.sx * 1
+                }
+            },
+            /* 计算属性 */
+            computed: {
+                
+                sum2() {
+                    console.log("sum2");
+                    return this.yw * 1 + this.sx * 1
+                },
+
+                sum3: {
+                    get() {
+                        console.log("sum3");
+                        return this.yw * 1 + this.sx * 1
+                    },
+                    set(newval) {
+                        console.log(newval);
+                        this.yw = this.sx = (newval / 2).toFixed(1);
+                    }
+                }
+            },
+            /* --------------监听方式1  ----------   */
+            /* 监听数学 */
+            watch: {
+                sx: function (newval, oldval) {
+                    console.log(newval, oldval);
+
+                    this.zf = this.yw * 1 + newval * 1;
+                }
+            }
+        })
+
+        /* ------------监听方式2---------监听语文-- */
+        vm.$watch("yw", function (newval) {
+            console.log(newval);
+            this.zf = this.sx * 1 + newval * 1;
+        })
+    </script>
+</body>
+
+</html>

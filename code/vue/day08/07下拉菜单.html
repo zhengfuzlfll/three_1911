@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07下拉菜单</title>
+    <!-- <script src="../vue.js"></script> -->
+    <style>
+        #con {
+            width: 200px;
+            height: 300px;
+            background: #58bc58;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../vue.js"></script>
+    <div id="app">
+        <input type="button" value="下拉菜单" @click="change">
+
+        <div id="con" v-if="istrue"></div>
+        <div id="con" v-show="istrue"></div>
+        <!-- 
+            v-show  显示和隐藏  控制 display   适用于后期频繁显示隐藏
+            v-if  创建和删除节点  适用于操作后期不会经常变动
+         -->
+    </div>
+
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                istrue: false
+            },
+            methods: {
+                change() {
+                    this.istrue = !this.istrue
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

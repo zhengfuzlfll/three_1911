@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选项卡</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(item,index) in namelist" @click="changeIndex(index)">
+                {{item.name}}
+
+            </li>
+            <!-- <li>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+        </li> -->
+        </ul>
+        <div class="">
+            <div class="con" v-for="(item,index) in namelist" v-show="curIndex===index">{{item.name}}==={{item.hobby}}
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script src="../vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+
+        data: {
+            curIndex: 0,
+            namelist: [{
+                name: "zs",
+                hobby: "大保健"
+            }, {
+                name: "ls",
+                hobby: "台球"
+            }, {
+                name: "wc",
+                hobby: "啃骨头"
+            }]
+        },
+        methods: {
+            changeIndex(idx) {
+                // console.log(idx);
+                this.curIndex = idx;
+            }
+        }
+    })
+</script>
+
+</html>

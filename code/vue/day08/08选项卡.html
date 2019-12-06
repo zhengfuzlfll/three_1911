@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选项卡</title>
+    <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/css.css">
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vue.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item" v-for="(item,index) in tabs" @click="changetab(index)">
+                    <a class="nav-link">{{item}}</a>
+                </li>
+                <!--   <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+            <div class="detail">
+                <div class="contents" v-for="(item,index) in contents" v-show="istrue">{{item}}</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                tabs: ["新闻", "体育", "娱乐", "科技"],
+                contents: ['新闻内容', "体育内容", "娱乐内容", "科技内容"],
+                istrue: false
+            },
+            methods: {
+                changetab(idx) {
+                    console.log(idx);
+                },
+                show(id) {
+                    console.log(id);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
