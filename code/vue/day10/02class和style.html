@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .bg {
+            background: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+
+        <p v-bind:class="color">v-bind:class="color"</p>
+        <!--简写方式  -->
+        <p :class="color">:cass="color"</p>
+
+        <p :class="{red:hascolor}">:class="{green:hascolor}"</p>
+        <!-- 取反 -->
+        <p :class="{red:!hascolor}">:class="{green:!hascolor}"</p>
+
+        <!--添加多个样式 -->
+        <!-- <p :class="{green,bg}">:class="{green,bg}" 默认为false</p> /*不允许这样写*/-->
+        <p :class="{green:hascolor,bg:hasbg}">:class="{green:hascolor,bg:hasbg}"</p>
+
+        <!-- 添加多个类名 -->
+        <!------ -------方-----------法--1- -->
+        <p :class="['red','bg']">:class="['red','bg']"</p>
+        <!-- 方法2 -->
+        <p :class="style">:class="style"</p>
+
+        <!-- 写成行内样式 -->
+        <p :style="{color:color,fontSize:fontSize,bg:hasbg}">:style="{color:color,font-size:fontSize}"</p>
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            color: "red",
+            hascolor: true,
+            hasbg: true,
+            style: ['blue', 'bg'],
+            fontSize: "28px"
+        }
+    })
+</script>
+
+</html>

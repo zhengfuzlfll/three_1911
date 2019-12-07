@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" id="app">
+        姓名(文本)：<input type="text" v-model="username">
+        <br><br>
+        性别(单选按钮)：
+        <!-- 默认选中  男  sex为1 -->
+        <!-- <input name="sex" type="radio" value="1" v-model="sex" />男
+        <input name="sex" type="radio" value="0" />女 -->
+
+        <!-- 默认选中  女    sex 要改为0，否则默认为男    sex为0，默认为男，sex为1，默认为女-->
+        <input name="sex" type="radio" value="1" v-model="sex" />男
+        <input name="sex" type="radio" value="0" v-model="sex" />女
+
+        <br><br>
+        技能(多选框)：
+        <!-- 默认 -->
+        <input type="checkbox" name="skills" value="java" v-model="likes">Java开发
+        <input type="checkbox" name="skills" value="vue" v-model="likes">Vue.js开发
+        <input type="checkbox" name="skills" value="python" v-model="likes">Python开发
+        <br><br>
+        城市(下拉框)：
+        <!-- 这里记得要获取下拉的value值，记得写在select -->
+        <select name="citys" v-model="city">
+            <!--  -->
+            <option v-for="(item,index) in citys" :value="item.code">
+                {{item.name}}
+            </option>
+        </select>
+        <br><br>
+        说明(多行文本)：<textarea cols="30" rows="5" v-model="texts"></textarea>
+        <br><br>
+        <!-- <button type="submit">提交</button> -->
+        <button type="button" @click="send()">提交</button>
+    </form>
+    <script src="../vue.js"></script>
+
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+
+                username: '',
+                /* 默认  男 */
+                sex: "1",
+                /* 默认 */
+                likes: ["java", "vue"],
+
+                citys: [ //初始化下拉框
+                    {
+                        code: 'bj',
+                        name: '北京'
+                    },
+                    {
+                        code: 'sh',
+                        name: '上海'
+                    },
+                    {
+                        code: 'sz',
+                        name: '深圳'
+                    },
+                    {
+                        code: 'gz',
+                        name: '广州'
+                    }
+                ],
+                /* 默认 广州*/
+                city: "gz",
+
+                texts: '',
+
+
+            },
+            methods: {
+                /* 获取数据并发送请求 */
+                send() {
+                    console.log("用户名==" + this.username);
+                    console.log("性别==" + this.sex);
+                    console.log("技能==" + this.likes);
+                    console.log("城市==" + this.city);
+                    console.log("说明==" + this.texts);
+                }
+            }
+        })
+    </script>
+
+
+
+
+    </br></br></br></br></br></br>
+
+
+
+    <!-- ---------保留------------ -->
+    <form action="#">
+        姓名(文本)：<input type="text">
+        <br><br>
+        性别(单选按钮)：
+        <input name="sex" type="radio" value="1" />男
+        <input name="sex" type="radio" value="0" />女
+        <br><br>
+        技能(多选框)：
+        <input type="checkbox" name="skills" value="java">Java开发
+        <input type="checkbox" name="skills" value="vue">Vue.js开发
+        <input type="checkbox" name="skills" value="python">Python开发
+        <br><br>
+        城市(下拉框)：
+        <!-- 这里记得要获取下拉的value值，记得写在select -->
+        <select name="citys">
+            <option>北京</option>
+        </select>
+        <br><br>
+        说明(多行文本)：<textarea cols="30" rows="5"></textarea>
+        <br><br>
+        <!-- <button type="submit">提交</button> -->
+        <button type="button">提交</button>
+    </form>
+
+
+</body>
+
+</html>

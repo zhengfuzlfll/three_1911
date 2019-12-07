@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>选项卡</title>
+    <style>
+        .active {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
         <ul>
-            <li v-for="(item,index) in namelist" @click="changeIndex(index)">
+            <li v-for="(item,index) in namelist" @click="changeIndex(index)" :class="{active:curIndex===index}">
                 {{item.name}}
 
             </li>

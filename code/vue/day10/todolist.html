@@ -61,9 +61,9 @@
             width: 877px;
         }
 
-        .input {
+        /* .input {
             margin-top: 20px;
-        }
+        } */
 
         .btnDel {
             background: red;
@@ -73,16 +73,23 @@
 
         .btnFinish {
             padding: 0px 8px;
+            background: #58bc58;
+            color: white;
+        }
+
+        .red {
+            color: red;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="app">
+        <h2>todolist任务列表</h2>
         <div class="input">
-            <input type="text" id="inputMsg"><!-- 输入 -->
-            <input type="date" id="date"><!-- 日期 -->
-            <input type="button" value="添加" id="addMsg"><!-- 添加按钮 -->
+            <input type="text" id="inputMsg" @keyup.enter="newTask()" v-model="task2"><!-- 输入任务 -->
+            <input type="date" id="date" v-model="endtime"><!-- 日期 -->
+            <input type="button" value="添加" id="addMsg" @click="newTask()"><!-- 添加按钮 -->
         </div>
 
         <table class="table table-striped">
@@ -98,35 +105,124 @@
             </thead>
 
             <tbody>
-                <tr>
+                <tr v-for="(item,index) in taskList">
+                    <th scope="row"> <input type="checkbox"></th>
+                    <td>{{index+1}}</td>
+                    <td>{{item.task}}</td>
+                    <td>{{item.endtime}}</td>
+                    <td>{{item.competed}}</td><!-- 是否完成需要渲染出来，否则后面点击修改不成功 -->
+                    <td>
+                        <button class="btnFinish" @click="change(index)">完成</button>
+                        <button class="btnDel" @click="remove(index)">删除</button>
+                    </td>
+                </tr>
 
-                    <th scope="row"> <input type="checkbox"></th>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td><button class="btnFinish">完成</button><button class="btnDel">删除</button></td>
-                </tr>
-                <tr>
-                    <th scope="row"> <input type="checkbox"></th>
-                    <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td><button class="btnFinish">完成</button><button class="btnDel">删除</button></td>
-                </tr>
-                <tr>
-                    <th scope="row"> <input type="checkbox"></th>
-                    <td>3</td>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td><button class="btnFinish">完成</button><button class="btnDel">删除</button></td>
-                </tr>
             </tbody>
         </table>
     </div>
 
 </body>
+<!-- 任务清单需求：
+    -渲染任务列表
+    -点击添加按钮或按下回车键的时候可以提交新的任务
+    -点击完成，状态改成：是
+    -点击删除就可以删除某个任务
+    -点击全选可以完成全选，点击下面的复选框反作用于全选
+        * 如果你只是想渲染数据，视图不会去修改的，单向
+        * 设置data + {{}}
+        * 渲染数据+ 视图发生改变，获取到改变的值,双向
+        * 双向数据绑定 v-model data ,影响别人 写一个函数：chage( this.total = this.num * 99;)
+        * 计算属性 computer msg ：m-v显示 getter v-m获取：setter
+        * 监听 watch 监听 msg： newval(v-m) (m-v) data + {{msg}}
+    -点击tr也可以选中或取消该选项
+-->
+<script src="../vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            color: "red",
+            hascolor: true,
+            taskList: [{
+                id: 1,
+                task: "挣他一个亿",
+                endtime: "2019-12-25",
+                competed: "否"
+            }, {
+                id: 1,
+                task: "对钱不感兴趣",
+                endtime: "9102-12-25",
+                competed: "否"
+            }, {
+                id: 1,
+                task: "香格里拉",
+                endtime: "2019-12-25",
+                competed: "否"
+            }],
+            task2: '',
+            endtime: ''
+        },
+        /* 全选-----计算器属性 */
+        // computed: {
+        //     checkall: {
+
+        //     }
+        // },
+
+        methods: {
+            /* 添加新任务 */
+            newTask() {
+                // console.log(this.task2);
+                // console.log(this.task2.trim().length);
+                // console.log(this.endtime);
+                if (this.task2.trim().length) {
+                    let con = {
+                        id: this.taskList.length + 1,
+                        task: this.task2,
+                        endtime: this.endtime,
+                        competed: "否"
+                    }
+                    this.taskList.unshift(con); /*最新添加的任务 插入到数组前面 */
+                    this.endtime = ''; /* 时间清空 */
+                    this.task2 = ''; /* 任务清空 */
+                } else {
+                    alert("请输入任务")
+                }
+
+            },
+
+
+            /* 点击 完成  按钮将  完成状态的  否  改为   是 */
+            change(idx) {
+
+                /* 方法1 遍历 */
+                // this.taskList.forEach((item, index) => {
+                //     if (idx == index) {
+                //         item.competed = "是";
+                //     }
+                // });
+
+                /*  方法2 */
+                this.taskList[idx].competed = "是";
+            },
+
+            /* 点击删除  删除任务 */
+            remove(idx) {
+                let isok = confirm("您确定要删除？")
+                // this.taskList.forEach((item, i) => {
+                //     if (idx == i) {
+                //         this.taskList.splice(idx, 1)
+                //     }
+
+                // });
+                /* ------------- */
+                if (isok) {
+                    this.taskList.splice(idx, 1);
+                }
+
+            }
+        }
+    })
+</script>
 
 </html>

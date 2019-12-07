@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father {
+            padding: 20px;
+            background: #58bc58;
+        }
+
+        .son {
+            padding: 10px;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 1、获取事件对象  默认有 $event 需写上 -->
+        <p @click="show($event)">1、获取事件对象</p>
+        <p @click="show2('字节跳动',$event)">@click="show('666666666',$event)"</p>
+
+        <!-- 2、阻止冒泡 -->
+
+        <!-- <div class="father" @click="father()">
+            冒泡
+            <p class="son" @click="son()"></p>
+        </div> -->
+        <div class="father" @click="father()">
+            <!-- 阻止冒泡 -->
+            <p class="son" @click.stop="son()"></p>
+        </div>
+
+        <!-- 3\阻止默认行为  .prevent -->
+        <!--
+            默认行为：a 标签 
+
+
+         -->
+        <a href="http://www.baidu.com" @click.prevent="show3()">百度 </a>
+
+        <!--4、 once绑定一次事件 -->
+        <button @click.once="show4()">once绑定一次事件{{num}}</button>
+
+        <!-- 5、键盘事件  -->
+        <!-- <input type="text" @keyup.enter="show5()"> -->
+        <input type="text" @keyup.13="show5()" placeholder="回车键">
+
+        <input type="text" @keyup.up="show6()" placeholder="上键">
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            num: 0
+        },
+        methods: {
+            show(ev) {
+                console.log("事件对象");
+                console.log(ev.target); /* 获取标签节点 */
+                console.log(ev.target.innerHTML); /* 获取文本信息 */
+                console.log(ev);
+
+
+            },
+            show2(data, ev) {
+                // console.log("事件对象");
+                console.log(data, ev); /* data为写入的参数 */
+                console.log("laoxie" + data);
+
+                // console.log(ev.target); /* 获取标签节点 */
+                // console.log(ev.target.innerHTML); /* 获取文本信息 */
+
+
+            },
+            father() {
+                alert("father");
+            },
+            son() {
+                alert("son")
+            },
+            show3() {
+                console.log("阻止默认行为");
+
+            },
+            show4() {
+
+                this.num = this.num + 1;
+                console.log("once绑定一次事件" + this.num);
+            },
+            show5() {
+                alert("按下回车键")
+            },
+            show6() {
+                console.log("66666");
+
+            }
+        }
+    })
+</script>
+
+</html>
