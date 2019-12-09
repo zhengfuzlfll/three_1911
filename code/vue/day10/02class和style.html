@@ -28,9 +28,9 @@
 <body>
     <div id="app">
 
-        <p v-bind:class="color">v-bind:class="color"</p>
+        <p v-bind:class="col">v-bind:class="color"</p>
         <!--简写方式  -->
-        <p :class="color">:cass="color"</p>
+        <p :class="col">:cass="color"</p>
 
         <p :class="{red:hascolor}">:class="{green:hascolor}"</p>
         <!-- 取反 -->
@@ -47,7 +47,7 @@
         <p :class="style">:class="style"</p>
 
         <!-- 写成行内样式 -->
-        <p :style="{color:color,fontSize:fontSize,bg:hasbg}">:style="{color:color,font-size:fontSize}"</p>
+        <p :style="{color:col,fontSize:fontSize,bg:hasbg}">:style="{color:color,font-size:fontSize}"</p>
     </div>
 </body>
 <script src="../vue.js"></script>
@@ -55,7 +55,7 @@
     let vm = new Vue({
         el: "#app",
         data: {
-            color: "red",
+            col: "orange",
             hascolor: true,
             hasbg: true,
             style: ['blue', 'bg'],

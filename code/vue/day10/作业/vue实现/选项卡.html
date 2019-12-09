@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue实现选项卡</title>
+    <style>
+        .active {
+            background: pink;
+        }
+
+        #list .con {
+            width: 400px;
+            height: 200px;
+            border: 1px solid #ccc;
+            /* display: none; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="title">vue实现选项卡</h1>
+    <div id="list">
+        <ul>
+            <!-- <input type="button" class="active" v-for="item in list" value="{item}"> -->
+            <!-- <input type="button" value="体育">
+            <input type="button" value="娱乐">
+            <input type="button" value="财经"> -->
+            <button v-for="(item,index) in list" @click="changeIndex(index)"
+                :class="{active:curIndex===index}">{{item.name}}</button>
+        </ul>
+        <div>
+            <!-- v-show   :class    都是为-----true（布尔值）--- 触发相关事件 -->
+            <div class="con" v-show="curIndex===index" v-for="(item,index) in list">
+                {{item.hobby}}</div><!-- v-show="{curIndex===index}" -->
+            <!-- <div class="con">体育</div>
+            <div class="con">娱乐</div>
+            <div class="con">财经</div> -->
+        </div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: "#list",
+            data: {
+                curIndex: 0,
+                list: [{
+                    name: "新闻",
+                    hobby: "新闻"
+                }, {
+                    name: "体育",
+                    hobby: "体育"
+                }, {
+                    name: "娱乐",
+                    hobby: "娱乐"
+                }, {
+                    name: "财经",
+                    hobby: "财经"
+                }],
+            },
+            methods: {
+                changeIndex(idx) {
+                    // console.log(idx);
+                    this.curIndex = idx;
+                }
+            }
+
+        })
+    </script>
+
+    </div>
+
+
+</body>
+
+</html>
