@@ -7,6 +7,7 @@ window.onload = function () {
         data: {
             orderlist: [{
                 shopname: "卷卷旗舰店",
+                shopselect: false,
                 list: [{
                         img: "images/1.png",
                         detail: '夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男',
@@ -32,6 +33,7 @@ window.onload = function () {
                 ]
             }, {
                 shopname: "卷卷旗舰店",
+                shopselect: false,
                 list: [{
                         img: "images/1.png",
                         detail: '夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男',
@@ -209,13 +211,19 @@ window.onload = function () {
             //     return this.hasClass = !this.hasClass
             // }
             /* 减号按钮，数量为1 更改颜色    即class改变 */
-            reduceResty() {
-                if (this.num >= 2) {
-                    this.reduce = "reduce";
-                } else {
-                    this.reduce = "reduce reSty"
-                }
-            },
+            // reduceResty() {
+            //     if (this.num >= 2) {
+            //         this.reduce = "reduce";
+            //     } else {
+            //         this.reduce = "reduce reSty"
+            //     }
+            // },
+
+            /* ---店铺全选--- */
+            shopselected(index) {
+                this.orderlist[index].shopselect = !this.orderlist[index].shopselect
+
+            }
 
 
         }

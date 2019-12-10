@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todolist</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* button,
+        input {
+            outline: none;
+            background: none;
+         border: none; 
+        } */
+
+        input {
+            background: none;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            outline: none;
+            border: 1px solid #ccc;
+            background: none;
+        }
+
+        button:focus {
+            outline: 0;
+            /* 去掉蓝色边框 */
+        }
+
+        /* input:focus {
+            border: none;
+        } */
+
+        #addMsg {
+            background: green;
+            /* width: 20px; */
+            /* padding-left: 10px;
+            padding:  */
+            padding: 5px 15px;
+            /* height: 20px; */
+            color: white;
+        }
+
+        .input input {
+            padding: 3px 0px;
+        }
+
+        #inputMsg {
+            width: 877px;
+        }
+
+        /* .input {
+            margin-top: 20px;
+        } */
+
+        .btnDel {
+            background: red;
+            color: white;
+            padding: 0px 8px;
+        }
+
+        .btnFinish {
+            padding: 0px 8px;
+            background: #58bc58;
+            color: white;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <h2>todolist任务列表</h2>
+        <div class="input">
+            <!-- ref  绑定聚焦 -->
+            <input type="text" id="inputMsg" @keyup.enter="newTask()" v-model="task2" ref="taskele"><!-- 输入任务 -->
+            <input type="date" id="date" v-model="endtime"><!-- 日期 -->
+            <input type="button" value="添加" id="addMsg" @click="newTask()"><!-- 添加按钮 -->
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <!-- v-model 相当于value值 -->
+                    <th scope="col"><input type="checkbox" v-model="checkall">全选</th>
+                    <th scope="col">#</th>
+                    <th scope="col">待办事项</th>
+                    <th scope="col">预计完成时间</th>
+                    <th scope="col">是否完成</th>
+                    <th scope="col">操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr v-for="(item,index) in taskList" @click="selected(index)">
+                    <!-- 将选中状态双向绑定到  input上 -->
+                    <th scope="row"> <input type="checkbox"></th>
+                    <td>{{index+1}}</td>
+                    <td>{{item.task}}</td>
+                    <td>{{item.endtime}}</td>
+                    <td>{{item.competed}}</td><!-- 是否完成需要渲染出来，否则后面点击修改不成功 -->
+                    <td>
+                        <!-- 阻止冒泡 -->
+                        <button class="btnFinish" @click.stop="change(index)">完成</button>
+                        <button class="btnDel" @click.stop="remove(index)">删除</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<!-- 任务清单需求：
+    -渲染任务列表
+    -点击添加按钮或按下回车键的时候可以提交新的任务
+    -点击完成，状态改成：是
+    -点击删除就可以删除某个任务
+    -点击全选可以完成全选，点击下面的复选框反作用于全选
+        * 如果你只是想渲染数据，视图不会去修改的，单向
+            * 设置data + {{}}
+        * 渲染数据+ 视图发生改变，获取到改变的值,双向
+            * 双向数据绑定 v-model data ,影响别人 写一个函数：chage( this.total = this.num * 99;)
+            * 计算属性 computer msg ：m-v显示 getter v-m获取：setter
+            * 监听 watch 监听 msg： newval(v-m) (m-v) data + {{msg}}
+    -点击tr也可以选中或取消该选项
+-->
+<script src="../vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            color: "red",
+            hascolor: true,
+            taskList: [
+                // this.taskall()
+
+                    {
+                id: 1,
+                task: "挣他一个亿",
+                endtime: "2019-12-25",
+                competed: "否",
+                isselected: false
+            },
+            {
+                id: 1,
+                task: "对钱不感兴趣",
+                endtime: "9102-12-25",
+                competed: "否",
+                isselected: false
+            },
+            {
+                id: 1,
+                task: "香格里拉",
+                endtime: "2019-12-25",
+                competed: "否",
+                isselected: false
+            }
+        ],
+        task2: '',
+        endtime: ''
+    },
+
+    /* 全选-----计算器属性 */
+    computed: {
+        checkall: {
+            get() {
+                /* m->v  数据层到视图层 */
+                let istrue = false;
+                this.taskList.forEach((item, index) => {
+                    if (item.isselected) {
+                        /* 一项为假都为假 */
+                        istrue = true;
+                    }
+                });
+                return istrue
+
+                /* 每一项都为真才为真 */
+                // let istrue = this.taskList.every(item => {
+                //     item.isselected
+                // })
+                // return istrue;
+
+            },
+            set(val) {
+                /* v->m 视图层到数据层 */
+                console.log(val);
+                this.taskList.forEach(item => {
+                    item.isselected = val;
+                })
+
+            }
+        }
+    },
+    /* 方法 */
+    methods: {
+        /* 添加新任务 */
+        newTask() {
+            // console.log(this.task2);
+            // console.log(this.task2.trim().length);
+            // console.log(this.endtime);
+            if (this.task2.trim().length) {
+                let con = {
+                    id: this.taskList.length + 1,
+                    task: this.task2,
+                    endtime: this.endtime,
+                    competed: "否",
+                    isselected: false
+                }
+                this.taskList.unshift(con); /*最新添加的任务 插入到数组前面 */
+                this.endtime = ''; /* 时间清空 */
+                this.task2 = ''; /* 任务清空 */
+                /* 聚焦 */
+                this.$refs.taskele.focus();
+
+                /*-----------    本地存储-       未完成------ */
+                // let str = localStorage.getItem("taskall"); /* 查看本地是否存有数据 */
+                // if (str) {
+                //     // let arr = JSON.parse(str).push(str)
+                //     // let arr = str.push(this.newTask)
+                //     // let res = arr.push(str);
+                //     let arr = JSON.parse(str);
+                //     // let res = arr.push(this.newTask());
+                //     localStorage.setItem("taskall", JSON.stringify(this.taskList))
+                //     console.log(str);
+                // } else {
+                //     localStorage.setItem("taskall", JSON.stringify(this.taskList))
+                // }
+
+
+            }
+
+
+        },
+
+
+        /* 点击 完成  按钮将  完成状态的  否  改为   是 */
+        change(idx) {
+
+            /* 方法1 遍历 */
+            // this.taskList.forEach((item, index) => {
+            //     if (idx == index) {
+            //         item.competed = "是";
+            //     }
+            // });
+
+            /*  方法2 */
+            this.taskList[idx].competed = "是";
+        },
+
+        /* 点击删除  删除任务 */
+        remove(idx) {
+            let isok = confirm("您确定要删除？")
+            /* -------------方法1 ----------------*/
+            // this.taskList.forEach((item, i) => {
+            //     if (idx == i) {
+            //         this.taskList.splice(idx, 1)
+            //     }
+
+            // });
+            /* ------方法2------- */
+            if (isok) {
+                this.taskList.splice(idx, 1);
+            }
+
+        },
+
+        /* 选中 */
+        selected(idx) {
+            this.taskList[idx].isselected = !this.taskList[idx].isselected
+        },
+
+        /* 存入本地 */
+        taskall() {
+            if (localStorage.getItem("taskall")) {
+                JSON.parse(localStorage.getItem("taskall") ++);
+            }
+            // else {
+            //     JSON.parse(localStorage.getItem("taskall"));
+            // }
+
+        }
+
+    }
+    })
+</script>
+
+</html>

@@ -41,7 +41,8 @@
                     <div class="all_check">
                         <!--店铺全选-->
                         <input type="checkbox" id="shop_a" class="shopChoice">
-                        <label for="shop_a" class="shop" :class="{mark:hasMark}"></label>
+                        <label for="shop_a" class="shop" :class="{mark:item.shopselect}"
+                            @click="shopselected(index)"></label>
                     </div>
                     <div class="shop_name">
                         店铺：<a href="javascript:;">{{item.shopname}}</a>
