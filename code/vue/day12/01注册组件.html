@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册组件</title>
+</head>
+
+<body>
+    <!-- 
+    注册全局组件：
+    Vue.component('组件名',{
+    template: '定义组件模板'，
+    data: function(){ //data 选项在组件中必须是一个函数
+    return {}
+    }
+    //其他选项：methods
+    })
+
+    组件：
+    * 注册组件 ： app-header
+        * 全局组件
+        * 局部组件
+     * 利用标签引入组件 : <app-header> <app-header>
+    -->
+    <!-- 格式
+    Vue.component('组件名',{
+        template: '定义组件模板'，
+        data: function(){ //data 选项在组件中必须是一个函数
+        return {}
+        }
+        //其他选项：methods
+        }) -->
+    <div id="app">
+        <!-- <p>蘑菇街头部</p>
+        <p>主体部分</p>
+        <p>蘑菇街底部</p> -->
+        <!-- <div class="header">头部</div>
+        <div class="main">主体</div>
+        <div class="footer"> 底部 </div> -->
+
+        <!-- <div class="header">头部</div> -->
+        <app-header></app-header><!-- 引用全局组件 -->
+        <!-- <div class="main">主体</div>
+        <div class="footer"> 底部 </div> -->
+        <app-main></app-main>
+        <app-footer></app-footer>
+        <!-- 引用局部组件 -->
+        <!-- <div class="slider">侧栏广告</div> -->
+        <app-slider></app-slider>
+    </div>
+
+    <script src="../vue.js"></script>
+    <script src="./components/01appheader.js"></script>
+    <script src="./components/02appmain.js"></script>
+    <script src="./components/03appfooter.js"></script>
+    <script>
+        /* 注册全局组件 */
+        // Vue.component('app-header', {
+        //     template: `<div class="header">头部66666666</div>`
+        // });
+        // /* 使用驼峰命名法，使用时为app-main */
+        // Vue.component('appMain', {
+        //     template: `<div class="main">主体</div>`
+        // });
+        // Vue.component('app-footer', {
+        //     template: `<div class="footer"> 底部 </div>`
+        // });
+
+
+        /* 局部组件注册  方式1  将slider */
+        // let slider = {
+        //     template: `<div class="slider" @click=show($event)>侧栏广告 {{ msg }}</div>`,
+        //     data: function () {
+        //         return {
+        //             msg: "666666666666"
+        //         }
+        //     },
+        //     methods: {
+        //         show(ev) {
+        //             alert(ev.target.innerText)
+        //         }
+        //     }
+        // }
+
+
+        /* 注册组件必须在初始化根实例之前进行注册 */
+        /* 根实例 */
+        let vm = new Vue({
+            el: "#app",
+            data: {
+
+            },
+            /* 注册局部组件 */
+            components: {
+                // "app-slider":slider   /* 方式1 */
+                "app-slider": {
+                    /* 方法2 */
+                    template: `<div class="slider" @click=show($event)>侧栏广告 {{ msg }}</div>`,
+                    data: function () {
+                        return {
+                            msg: "666666666666"
+                        }
+                    },
+                    methods: {
+                        show(ev) {
+                            alert(ev.target.innerText)
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

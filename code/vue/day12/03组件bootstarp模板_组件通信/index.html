@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>组件间通信</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="shortcut icon" href="./ico.ico"><!-- 小图标，rel为固定写法，href为小图片，必须为.ico格式-->
+  <link href="style/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="style/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--头部导航区域-->
+  <div id="app">
+
+    <app-header></app-header>
+    <!--核心区域:分左右两边-->
+    <div class="container-fluid">
+      <div class="row">
+
+        <!--左边菜单栏区域-->
+        <app-news></app-news>
+
+        <!--右边主页面区域: 分上下两个区域-->
+        <app-main></app-main>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="../../vue.js"></script>
+<script src="../../node_modules/pubsub-js/src/pubsub.js"></script><!-- 兄弟组件间通信 -->
+<!-- appheader -->
+<script src="./components/appheader.js"></script>
+<!-- appnews -->
+<script src="./components/appnews.js"></script>
+<!-- appmain -->
+<script src="./components/appdash.js"></script>
+<script src="./components/item.js"></script>
+<script src="./components/apptitle.js"></script>
+<script src="./components/appmain.js"></script>
+<script>
+  // 注册局部组件
+
+  let vm = new Vue({
+    el: "#app",
+    components: {
+      'app-header': appheader,
+      'app-news': appnews,
+      'app-main': appmain
+    }
+  })
+
+  /* 兄弟组件间的通信 */
+</script>
+
+</html>
