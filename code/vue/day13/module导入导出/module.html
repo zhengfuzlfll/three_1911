@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="module">
+        /* 导入 */
+        /* 导入后要用服务器打开 */
+        /* 逐个导入 */
+        import {show2,aobj as obj} from './module.js';/* 导入 */
+        
+        /* 一次性全部导入 */
+        import * as all from "./module.js"
+        
+        /* 导入默认值 变量 */
+        import * as alldefault from "./module2.js"
+
+        console.log(show2());
+        console.log(obj);
+        console.log(obj.show());
+        console.log(all);
+        console.log(all.aobj.show());
+        console.log(all.show2());
+
+         /* 导入默认值 变量 */
+        console.log(alldefault);
+        console.log(alldefault.default);
+        console.log(alldefault.default.username);
+        
+
+    </script>
+</body>
+
+</html>
