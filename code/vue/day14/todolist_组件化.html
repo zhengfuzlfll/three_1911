@@ -97,7 +97,7 @@
             <thead>
                 <tr>
                     <!-- v-model 相当于value值 -->
-                    <th scope="col"><input type="checkbox" v-model="checkall">全选</th>
+                    <th scope="col"><input v-model="checkall" type="checkbox">全选</th>
                     <th scope="col">#</th>
                     <th scope="col">待办事项</th>
                     <th scope="col">预计完成时间</th>
@@ -109,7 +109,7 @@
             <tbody>
                 <tr v-for="(item,index) in taskList" @click="selected(index)">
                     <!-- 将选中状态双向绑定到  input上 -->
-                    <th scope="row"> <input type="checkbox"></th>
+                    <th scope="row"> <input type="checkbox" v-model="item.isselected"></th>
                     <td>{{index+1}}</td>
                     <td>{{item.task}}</td>
                     <td>{{item.endtime}}</td>
@@ -182,12 +182,17 @@
                 get() {
                     /* m->v  数据层到视图层 */
                     let istrue = false;
-                    this.taskList.forEach((item, index) => {
-                        if (item.isselected) {
-                            /* 一项为假都为假 */
-                            istrue = true;
-                        }
-                    });
+                    if (this.taskList.length) {
+                        /* 有数据   */
+                        istrue = this.taskList.every((item, index) => {
+                            // if (item.isselected) {
+                            /* every 一项为假都为假 */
+                            return item.isselected /* return 出去 */
+                            // }
+
+                        });
+                        // return istrue
+                    }
                     return istrue
 
                     /* 每一项都为真才为真 */
@@ -280,21 +285,21 @@
 
             },
 
-            /* 选中 */
+            /* 选中 每一个项*/
             selected(idx) {
                 this.taskList[idx].isselected = !this.taskList[idx].isselected
             },
 
             /* 存入本地 */
-            taskall() {
-                if (localStorage.getItem("taskall")) {
-                    JSON.parse(localStorage.getItem("taskall") ++);
-                }
-                // else {
-                //     JSON.parse(localStorage.getItem("taskall"));
-                // }
+            // taskall() {
+            //     if (localStorage.getItem("taskall")) {
+            //         JSON.parse(localStorage.getItem("taskall") ++);
+            //     }
+            // else {
+            //     JSON.parse(localStorage.getItem("taskall"));
+            // }
 
-            }
+            // }
 
         }
     })

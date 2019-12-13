@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>todolist</title>
+    <title>todolist任务列表_计算属性</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <script src="../bootstrap/js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
@@ -109,7 +109,7 @@
             <tbody>
                 <tr v-for="(item,index) in taskList" @click="selected(index)">
                     <!-- 将选中状态双向绑定到  input上 -->
-                    <th scope="row"> <input type="checkbox"></th>
+                    <th scope="row"> <input type="checkbox" v-model="item.isselected"></th>
                     <td>{{index+1}}</td>
                     <td>{{item.task}}</td>
                     <td>{{item.endtime}}</td>
@@ -177,36 +177,36 @@
         },
 
         /* 全选-----计算器属性 */
+
         computed: {
             checkall: {
                 get() {
-                    /* m->v  数据层到视图层 */
-                    let istrue = false;
-                    this.taskList.forEach((item, index) => {
-                        if (item.isselected) {
-                            /* 一项为假都为假 */
-                            istrue = true;
-                        }
-                    });
-                    return istrue
-
-                    /* 每一项都为真才为真 */
-                    // let istrue = this.taskList.every(item => {
-                    //     item.isselected
-                    // })
-                    // return istrue;
-
+                    let len = this.taskList.length; /* 数组长度 */
+                    let istrue = false; /* 若全部删除完则将全选按钮的勾选去掉 */
+                    if (len) {
+                        istrue = this.taskList.every(item => {
+                            return item.isselected;
+                        })
+                    }
+                    return istrue;
                 },
                 set(val) {
-                    /* v->m 视图层到数据层 */
                     console.log(val);
-                    this.taskList.forEach(item => {
+                    this.taskList.forEach((item, index) => {
                         item.isselected = val;
-                    })
+                    });
 
                 }
             }
         },
+
+
+
+
+
+
+
+
         /* 方法 */
         methods: {
             /* 添加新任务 */
@@ -280,21 +280,21 @@
 
             },
 
-            /* 选中 */
+            /* 选中 每一个项*/
             selected(idx) {
                 this.taskList[idx].isselected = !this.taskList[idx].isselected
             },
 
             /* 存入本地 */
-            taskall() {
-                if (localStorage.getItem("taskall")) {
-                    JSON.parse(localStorage.getItem("taskall") ++);
-                }
-                // else {
-                //     JSON.parse(localStorage.getItem("taskall"));
-                // }
+            // taskall() {
+            //     if (localStorage.getItem("taskall")) {
+            //         JSON.parse(localStorage.getItem("taskall") ++);
+            //     }
+            // else {
+            //     JSON.parse(localStorage.getItem("taskall"));
+            // }
 
-            }
+            // }
 
         }
     })

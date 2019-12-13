@@ -3,27 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>3、Vue购物车</title>
+    <title>vue购物车_计算属性</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/carts.css" />
     <!-- <script src="js/jquery-1.11.0.min.js"></script> -->
-    <script src="./vue.js"></script>
-    <script src="./car3.js"></script>
     <!-- <script src="./js/cart.js"></script> -->
+    <script src="../vue.js"></script>
+    <script src="./cart.js"></script>
 </head>
 
 <body>
     <div id="app">
-
-
         <section class="cartMain">
+            <!-- 全选 -->
             <div class="cartMain_hd">
                 <ul class="order_lists cartTop">
                     <li class="list_chk">
                         <!--所有商品全选-->
-                        <!-- id="all" class="whole_check"   拥有勾选属性-->
-                        <input type="checkbox" v-model="isse">
-                        <label for="all" :class="{mark:isse}" @click="all()"></label>
+                        <input type="checkbox" v-model="selectall">
+                        <label for="all" :class="{mark:selectall}" @click="all()"></label>
                         全选
                     </li>
                     <li class="list_con">商品信息</li>
@@ -35,47 +33,51 @@
                 </ul>
             </div>
 
-            <div class="cartBox" v-for="(item,index) in goods">
+            <!-- 商品 -->
+            <!-- 一个店铺 -->
+            <div class="cartBox" v-for="(item,index) in orderlist">
                 <div class="shop_info">
                     <div class="all_check">
                         <!--店铺全选-->
-                        <input type="checkbox" v-model="item.shopselect">
-                        <label class="shop" :class="{mark:item.shopselect}" @click=shopselectall(index)></label>
-                        <!-- 有mark类名，勾选 -->
+                        <input type="checkbox" v-model="allsel">
+                        <label :class="{mark:allsel}" @click="shopselectall(index)"></label>
                     </div>
                     <div class="shop_name">
-                        店铺：<a href="javascript:;">{{ item.shopname}}</a>
+                        店铺：<a href="javascript:;">{{item.shopname}}</a>
                     </div>
                 </div>
-                <div class="order_content">
 
-                    <!-- 商品信息 -->
-                    <!-- 一个ul 为一个商品 -->
-                    <ul class="order_lists" v-for="(item2 ,index2) in item.ordercontent">
+                <div class="order_content">
+                    <!--一个ul 为一个商品信息 -->
+                    <ul class="order_lists" v-for="(item2,index2) in item.list">
                         <li class="list_chk">
-                            <input type="checkbox" class="son_check" v-model="item2.gselect">
-                            <label :class="{mark:item2.gselect}" @click="goodsselect(index,index2)"></label>
+                            <!-- 某一个商品勾选 -->
+                            <input type="checkbox" v-model="item2.goodselect">
+                            <label :class="{mark:item2.goodselect}" @click="goodselectall(index,index2)"></label>
                         </li>
                         <li class="list_con">
-                            <div class="list_img"><a href="javascript:;"><img :src="item2.gimg" alt=""></a></div>
-                            <div class="list_text"><a href="javascript:;">{{item2.gtext}}</a></div>
+                            <div class="list_img"><a href="javascript:;"><img :src="item2.img" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">{{ item2.detail}}</a></div>
                         </li>
                         <li class="list_info">
                             <p>规格：默认</p>
                             <p>尺寸：16*16*3(cm)</p>
                         </li>
                         <li class="list_price">
+                            <!-- 单价 -->
                             <p class="price">￥{{ item2.price}}</p>
                         </li>
                         <li class="list_amount">
                             <div class="amount_box">
+                                <!-- 输入框 -->
                                 <a href="javascript:;" class="reduce reSty">-</a>
-                                <input type="text" :value="item2.gnum" class="sum">
+                                <input type="text" :value="item2.num" class="sum">
                                 <a href="javascript:;" class="plus">+</a>
                             </div>
                         </li>
                         <li class="list_sum">
-                            <p class="sum_price">￥{{item2.price*item2.gnum}}</p>
+                            <!-- 总价 -->
+                            <p class="sum_price">￥{{item2.price*item2.num}}</p>
                         </li>
                         <li class="list_op">
                             <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
@@ -84,6 +86,7 @@
 
                 </div>
             </div>
+
 
             <!--底部-->
             <div class="bar-wrapper">
