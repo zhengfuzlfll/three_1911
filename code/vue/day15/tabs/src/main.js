@@ -25,7 +25,6 @@ import router from './router/index.js'
 // import Cart from './pages/Cart.vue';
 
 
-
 // /* 2. 使用vue­router（script标签引入方式自动完成） */
 // Vue.use(VueRouter)
 

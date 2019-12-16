@@ -1,0 +1,4 @@
+{
+    "PORT": 2020,
+    "mongodbURL":"mongodb://localhost:27017"
+}

@@ -12,9 +12,9 @@
   <div id="app">
     <!-- 6. 在组件中使用 -->
     <ul>
-      <li v-for="(item,index) in tags" :key="item.name" @click="change(index)">
+      <li v-for="(item) in tags" :key="item.name" @click="zheng(item.path)">
         {{item.text}}
-        <router-link :to="curentpage"></router-link>
+        <!-- <router-link :to="item.path">{{item.text}}</router-link> 声明式导航-->
       </li>
       <!-- <li></li>
       <li></li>
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+// import { log } from "util";
 // import { log } from "util";
 export default {
   name: "app",
@@ -41,10 +42,9 @@ export default {
     };
   },
   methods: {
-    change(index) {
-      window.console.log(index);
-      window.console.log(this.curentpage);
-      this.curentpage = this.tags[index].path;
+    zheng(path) {
+      window.console.log(path);
+      this.$router.push({ path });
     }
   }
 };
