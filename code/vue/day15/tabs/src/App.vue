@@ -44,7 +44,7 @@ export default {
   methods: {
     zheng(path) {
       window.console.log(path);
-      this.$router.push({ path });
+      this.$router.push({ path }); /* 编程式导航 */
     }
   }
 };

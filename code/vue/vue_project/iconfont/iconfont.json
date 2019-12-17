@@ -1,0 +1,23 @@
+{
+  "id": "1566654",
+  "name": "男士购",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5833628",
+      "name": "复选框_选中",
+      "font_class": "fuxuankuang_xuanzhong",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "8081353",
+      "name": "错误",
+      "font_class": "iconfront-",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}
