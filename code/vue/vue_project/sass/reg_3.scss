@@ -18,11 +18,133 @@ header {
     height: vw(86);
     width: 100%;
     background: rgb(255, 80, 1);
-    display: flex;
+
     // flex-direction: row;
 
-    div {
-        // flex: 1;
-        // flex-direction: row;
+    // div {
+    // flex: 1;
+    // flex-direction: row;
+    // }
+
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-size: vw(36);
+        line-height: vw(86);
+
+        .header_l {
+            width: vw(90);
+            text-align: center;
+
+            .icon-fanhui {
+                font-size: vw(48);
+            }
+        }
+
+        .header_title {
+            width: vw(184);
+        }
+
+        .header_r {
+            width: vw(104);
+            height: vw(86);
+        }
+    }
+
+}
+
+/* main */
+main {
+
+    .ctouch-main-layout {
+
+        /* 设置登录密码 */
+        .register-mobile-tip {
+            padding: vw(26) vw(44);
+
+            .p1 {
+                width: vw(662);
+                height: vw(40);
+                color: #888;
+                font-size: vw(24);
+            }
+        }
+
+        /*  */
+        .nctouch-inp-con {
+
+            /* ul */
+            .listall {
+                background: white;
+                width: 100%;
+                height: vw(85);
+                line-height: vw(85);
+                font-size: vw(30);
+
+                li {
+                    margin-left: vw(22);
+
+                    h4 {
+                        float: left;
+                    }
+
+                    div {
+                        float: left;
+
+                        input {
+                            font-size: vw(30);
+                            ;
+                            margin-left: vw(20);
+                        }
+                    }
+                }
+            }
+
+            /* 显示密码 */
+            .remember-form {
+                width: vw(574);
+                height: vw(40);
+                margin: vw(44) vw(88) 0;
+
+                label {
+                    font-size: vw(30);
+                }
+            }
+
+            /* 完成 */
+            .form-btn {
+                height: vw(80);
+                margin-top: vw(44);
+
+                a {
+                    background: #EEE;
+                    display: block;
+                    width: vw(675);
+                    height: vw(80);
+                    margin: auto;
+                    text-align: center;
+                    line-height: vw(80);
+                    font-size: vw(30);
+                }
+            }
+
+            /* 提示信息 */
+            .tips {
+                // margin-top: vw(40);
+                width: vw(200);
+                height: vw(80);
+                background: white;
+                text-align: center;
+                line-height: vw(80);
+                margin: auto;
+                margin-top: vw(50);
+                font-size: vw(30);
+                box-shadow: 0px 0px vw(5) vw(2);
+        
+            }
+
+        }
     }
 }
