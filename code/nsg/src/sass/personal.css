@@ -1,0 +1,144 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+}
+
+header {
+  background: #ff5001;
+  width: 100%;
+  height: 64.66667vw;
+  position: relative;
+  /* 设置 */
+  /* 点击登录 */
+  /* 收藏 */
+}
+
+header .top-set {
+  width: 95%;
+  margin: auto;
+  height: 11.33333vw;
+  line-height: 11.33333vw;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+header .top-set .icon-xitongshezhi {
+  font-size: 6.66667vw;
+}
+
+header .top-set .icon-gengduo {
+  font-size: 6.66667vw;
+}
+
+header .top-img {
+  width: 70.4vw;
+  height: 31.46667vw;
+  margin: auto;
+}
+
+header .top-img p {
+  text-align: center;
+  color: white;
+  font-size: 4vw;
+}
+
+header .top-img img {
+  display: inline-block;
+  width: 23.46667vw;
+  height: 23.46667vw;
+  text-align: center;
+  margin: 0 23.46667vw;
+}
+
+header .top-bottom {
+  background: rgba(170, 170, 170, 0.5);
+  width: 100%;
+  height: 17.6vw;
+  color: white;
+  font-size: 4vw;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .top-bottom ul {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .top-bottom ul li {
+  height: 11.73333vw;
+  padding: 2.93333vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .top-bottom ul li .icon-shoucang,
+header .top-bottom ul li .icon-haofangtuoiconfont_dianpushoucang,
+header .top-bottom ul li .icon-zuji {
+  font-size: 6.66667vw;
+}
+
+main .list1 li {
+  width: 100%;
+  margin-top: 2.93333vw;
+  background: white;
+}
+
+main .list1 li .div1 {
+  width: 95%;
+  height: 5.86667vw;
+  border-bottom: 0.13333vw solid #ccc;
+  padding: 2.93333vw 0vw 2.93333vw 0;
+  margin: auto;
+}
+
+main .list1 li .div1 .div2 {
+  width: 90%;
+  height: 5.86667vw;
+  float: left;
+}
+
+main .list1 li .div1 .div2 span:nth-child(2),
+main .list1 li .div1 .div2 .iconfont {
+  font-size: 4vw;
+}
+
+main .list1 li .div1 #span1 {
+  float: right;
+}
+
+main .list1 li .div3 .list2 {
+  width: 95%;
+  height: 16.26667vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.13333vw solid #ccc;
+}
+
+main .list1 li .div3 .list2 li {
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .list1 li .div3 .list2 li .iconfont {
+  font-size: 5.33333vw;
+}

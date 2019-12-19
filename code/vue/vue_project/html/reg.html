@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <link rel="stylesheet" href='../sass/reg.css'>
+
 </head>
 
 <body>
@@ -30,10 +31,9 @@
                         <div class="input-box">
                             <input type="text" placeholder="请输入验证码">
                             <span class="input-del iconfont icon-iconfront-"></span>
-                            <a href="">
-                                <img src="https://www.nanshig.com/mobile/index.php?act=seccode&op=makecode&k=241da99b&t=0.2947737496861651"
-                                    alt="">
-                            </a>
+                            <!-- <a> -->
+                            <canvas width="100" height="50" id="captcha1"></canvas>
+                            <!-- </a> -->
                         </div>
                     </li>
                 </nav>
@@ -52,5 +52,12 @@
     </main>
     <footer></footer>
 </body>
+<script src="../extend/captcha.js"></script>
+<script>
+    let captcha1 = new Captcha();
+    captcha1.draw(document.querySelector('#captcha1'), r => {
+        console.log(r, '验证码1');
+    });
+</script>
 
 </html>

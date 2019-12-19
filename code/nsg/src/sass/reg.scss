@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@function vw($px) {
+    @return($px/750)*100vw;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+/* main */
+.nctouch-main-layout {
+    // width: vw();
+    // height: vw(190);
+    // background-color: red;
+    padding-top: vw(88);
+    // overflow: none;
+
+    // display: flex;
+    /* ul/nav */
+    .nctouch-inp-con {
+        background-color: white;
+
+        /* li */
+        .form-item {
+            width: vw(728);
+            height: vw(85);
+            margin-left: vw(22);
+            background-color: white;
+            line-height: vw(85);
+            // text-align: center;
+            overflow: hidden;
+            margin: auto;
+            border-bottom: 1px solid #ccc;
+
+            h4 {
+                float: left;
+                font-size: vw(30);
+                width: vw(132);
+                height: vw(88);
+                text-align: right;
+            }
+
+            /* input */
+            .input-box {
+                float: left;
+                // height: vw(85);
+                // overflow: hidden;
+
+                // padding: vw(22) vw(0);
+                // padding: 10px 0px;
+                input {
+                    padding: vw(20) vw(0);
+                    // font-size: vw(24);
+                    margin-left: vw(20);
+                    font-size: vw(30);
+                }
+
+                .icon-iconfront- {
+                    color: #aaa;
+                    font-size: vw(40);
+                }
+
+            }
+        }
+
+
+
+        .list1 {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .list2 {
+            position: relative;
+            // background-color: yellow;
+
+            img {
+                width: vw(176);
+                height: vw(60);
+                position: absolute;
+                // top: 0px;
+                top: 50%;
+                right: vw(88);
+                transform: translateY(-50%);
+            }
+
+            .input-del {
+                position: absolute;
+                left: vw(350);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    /* 同意协议 */
+    .remember-form {
+        width: vw(574);
+        height: vw(40);
+        margin: auto;
+        margin-top: vw(44);
+        // background: yellow;
+        font-size: vw(30);
+    }
+
+    /*获取验证码 */
+    .form-btn {
+        margin-top: vw(44);
+
+        // width: vw(675);
+        // height: vw(40);
+        // margin: auto;
+        a {
+            display: block;
+            width: vw(675);
+            height: vw(80);
+            text-align: center;
+            background-color: #EEE;
+            margin: auto;
+            line-height: vw(80);
+        }
+    }
+}

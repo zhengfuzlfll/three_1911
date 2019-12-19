@@ -2,7 +2,7 @@ import Vue from 'vue';
 // 1. 引入vue­router 
 import VueRouter from 'vue-router';
 
-/* 5、引入子组件  通过哈希值的改变切换不用组件 */
+/* 5、引入子组件  通过哈希值的改变切换不同组件 */
 import Home from '../pages/Home.vue';
 import Login from '../pages/Login.vue';
 import Reg from '../pages/Reg.vue';

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@function vw($px) {
+    @return($px/750)*100vw;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+ul {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+    height: vw(110);
+    position: absolute;
+    // margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+margin-top: vw(110);
+    li {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        font-size: vw(36);
+        // span:nth-child(1){
+
+        // }
+        .icon-shouye,
+        .icon-leimupinleifenleileibie,
+        .icon-xiaoxi,
+        .icon-gouwuche,
+        .icon-wode {
+            font-size: vw(36);
+        }
+    }
+}

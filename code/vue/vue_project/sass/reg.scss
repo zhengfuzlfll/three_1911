@@ -96,6 +96,13 @@ body {
                 top: 50%;
                 transform: translateY(-50%);
             }
+
+            // a {
+            //     float: left;
+
+
+
+            // }
         }
     }
 
@@ -117,6 +124,7 @@ body {
         // height: vw(40);
         // margin: auto;
         a {
+            font-size: vw(40);
             display: block;
             width: vw(675);
             height: vw(80);
