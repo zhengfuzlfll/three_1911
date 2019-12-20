@@ -14,9 +14,13 @@
 // } = require('mongodb');
 // console.log(MongoClient);
 
-const mongodb = require('mongodb');
-const MongoClient = mongodb.MongoClient;
-console.log(MongoClient);
+// const mongodb = require('mongodb');
+// const MongoClient = mongodb.MongoClient;
+// console.log(MongoClient);
+const {
+    MongoClient
+} = require('mongodb');
+
 //连接mongoDB
 MongoClient.connect("mongodb://localhost:27017", function (err, client) {
     // if (err) throw err;
@@ -46,8 +50,8 @@ MongoClient.connect("mongodb://localhost:27017", function (err, client) {
     })
 
     collection.insertOne({
-        name: "66666666",
-        time:"2019-12-15"
+        name: "海蓝时见鲸",
+        time: "2019-12-15"
     })
 
 
