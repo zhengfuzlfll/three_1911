@@ -1,5 +1,5 @@
 {
     "PORT": 2020,
     "mongodbUrl": "mongodb://localhost:27017",
-    "DBname": "h51911"
+    "DBname": "nanshig"
 }
