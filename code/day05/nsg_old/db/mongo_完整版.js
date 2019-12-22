@@ -134,7 +134,7 @@ async function update(colname, query, newdata) {
     }
 }
 
-/* col.updateMany 符合条件的全部更改 */
+///* col.updateMany 符合条件的全部更改 */
 // let result = await col.updateMany({
 //     name: "张三66"
 // }, {
@@ -150,7 +150,7 @@ async function update(colname, query, newdata) {
 //         name: "林深时见鹿"
 //     }
 // })
-/*  modifiedCount: 1   表示一条数据被修改成功（数字为修改的条数） */
+///*  modifiedCount: 1   表示一条数据被修改成功（数字为修改的条数） */
 
 
 
