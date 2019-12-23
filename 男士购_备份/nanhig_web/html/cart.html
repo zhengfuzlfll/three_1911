@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/cart.min.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+
+<body>
+    <section class="cart">
+        <section class="shop">
+            <section class="stitle">
+                <section class="sname">
+                    <span class="iconfont iconicon-test7"></span>
+                    <h2>潮男搭配师</h2>
+                </section>
+                <span class="iconfont iconicon-test61"></span>
+            </section>
+            <nav class="slist">
+                <li>
+                    <section class="checkbox">
+                        <label for="1"></label>
+                        <input type="checkbox" id="1">
+                    </section>
+                    <img src="../images/1/39_05982346005548882_240.jpg" alt="">
+                    <section class="gcontent">
+                        <section class="top">
+                            <p>男士破洞春秋牛仔夹克潮款2019</p>
+                            <a href="javascript:void(0)" class="iconfont iconhuishouzhan"></a>
+                        </section>
+                        <section class="bottom">
+                            <span class="gprice">￥100</span>
+                            <section class="choosenum">
+                                <input type="button" value="-">
+                                <input type="text">
+                                <input type="button" value="+">
+                            </section>
+                        </section>
+                    </section>
+                </li>
+                <li>
+                    <section class="checkbox">
+                        <label for="1"></label>
+                        <input type="checkbox" id="1">
+                    </section>
+                    <img src="../images/1/39_05982346005548882_240.jpg" alt="">
+                    <section class="gcontent">
+                        <section class="top">
+                            <p>男士破洞春秋牛仔夹克潮款2019</p>
+                            <a href="javascript:void(0)" class="iconfont iconhuishouzhan"></a>
+                        </section>
+                        <section class="bottom">
+                            <span class="gprice">￥100</span>
+                            <section class="choosenum">
+                                <input type="button" value="-">
+                                <input type="text">
+                                <input type="button" value="+">
+                            </section>
+                        </section>
+                    </section>
+                </li>
+            </nav>
+        </section>
+        <section class="shop">
+            <section class="stitle">
+                <section class="sname">
+                    <span class="iconfont iconicon-test7"></span>
+                    <h2>潮男搭配师2</h2>
+                </section>
+                <span class="iconfont iconicon-test61"></span>
+            </section>
+            <nav class="slist">
+                <li>
+                    <section class="checkbox">
+                        <label for="1"></label>
+                        <input type="checkbox" id="1">
+                    </section>
+                    <img src="../images/1/39_05982346005548882_240.jpg" alt="">
+                    <section class="gcontent">
+                        <section class="top">
+                            <p>男士破洞春秋牛仔夹克潮款2019</p>
+                            <a href="javascript:void(0)" class="iconfont iconhuishouzhan"></a>
+                        </section>
+                        <section class="bottom">
+                            <span class="gprice">￥100</span>
+                            <section class="choosenum">
+                                <input type="button" value="-">
+                                <input type="text">
+                                <input type="button" value="+">
+                            </section>
+                        </section>
+                    </section>
+                </li>
+            </nav>
+        </section>
+        <section class="total">
+            <section class="checkbox">
+                <label for="1"></label>
+                <input type="checkbox" id="1">
+            </section>
+            <p>共<span class="totalnum">n</span>件商品，共<span class="totalprice">300.0</span>元</p>
+            <a href="javascript:void(0)" class="pay">去结算</a>
+        </section>
+    </section>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $('label').on('click', function () {
+        if ($(this).is('.active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
+        }
+    })
+</script>
+
+</html>

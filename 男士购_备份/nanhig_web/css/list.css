@@ -1,0 +1,225 @@
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "icon";
+  src: url("../iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfont/iconfont.svg#icomoon") format("svg"), url("../iconfont/iconfont.woff") format("woff"), url("../iconfont/iconfont.ttf") format("truetype");
+}
+
+.icon {
+  font-family: "icon";
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+section .content {
+  width: 96.26667vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+section header {
+  height: 11.6vw;
+  background: #ff5001;
+}
+
+section header .header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+section header .header .iconfont1 {
+  width: 4vw;
+  height: 2.66667vw;
+  color: #e2532b;
+}
+
+section header .header .input1 {
+  width: 64vw;
+  height: 8vw;
+  background: #dd3000;
+  text-align: center;
+  border-radius: 1.33333vw;
+}
+
+section header .header p {
+  width: 4vw;
+  height: 2.66667vw;
+  position: absolute;
+  left: 17.33333vw;
+  top: 3.33333vw;
+}
+
+section header .header .iconfont {
+  font-size: 4.93333vw;
+  color: #ffb998;
+}
+
+section nav {
+  width: 100%;
+}
+
+section nav .fuzhaung {
+  width: 100%;
+  height: 8.8vw;
+  background: #f5f5f5;
+  border-bottom: 0.26667vw solid #efefef;
+}
+
+section nav .fuzhaung .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section nav .fuzhaung .content a {
+  display: block;
+  width: 14.66667vw;
+  height: 100%;
+  box-sizing: border-box;
+  color: #9d9d9d;
+  font-size: 3.46667vw;
+  line-height: 8.8vw;
+  text-align: center;
+}
+
+section nav .fuzhaung .content .active {
+  color: #ff5001;
+  border-bottom: 0.8vw solid #ff5001;
+}
+
+section nav .biaoti {
+  width: 100%;
+  height: 8.8vw;
+  border-bottom: 0.26667vw solid #f7f7f7;
+  background: #fcfcfc;
+}
+
+section nav .biaoti .content {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4.66667vw;
+  box-sizing: border-box;
+}
+
+section nav .biaoti .content span {
+  font-size: 3.46667vw;
+  line-height: 8.8vw;
+  color: #3e4749;
+}
+
+section nav .nav {
+  width: 100%;
+  background: #fff;
+}
+
+section nav .nav ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  padding-top: 2.66667vw;
+}
+
+section nav .nav ul li {
+  flex-shrink: 0;
+  width: 24%;
+  height: 20vw;
+  margin-bottom: 2.66667vw;
+}
+
+section nav .nav ul li img {
+  width: 14.26667vw;
+  height: 13.73333vw;
+}
+
+section nav .nav ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.93333vw;
+  line-height: 2.93333vw;
+  color: #636363;
+  align-items: center;
+}
+
+section main {
+  flex: 1;
+  background: #f5f5f5;
+  overflow: auto;
+}
+
+section main .content {
+  padding-top: 3.33333vw;
+}
+
+section main .content h1 {
+  width: 100%;
+  height: 4.8vw;
+  font-size: 4vw;
+  line-height: 4.8vw;
+  color: #0c0a1d;
+  border-left: 0.8vw solid #ff5001;
+  padding-left: 2vw;
+}
+
+section main .content ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+section main .content ul li {
+  flex-shrink: 0;
+  width: 49%;
+  height: 58vw;
+  margin-top: 2.66667vw;
+  background: #fff;
+}
+
+section main .content ul li img {
+  width: 100%;
+  height: 42.4vw;
+}
+
+section main .content ul li p:nth-child(2) {
+  margin-top: 1.6vw;
+  width: 100%;
+  height: 3.73333vw;
+  font-size: 3.73333vw;
+  line-height: 3.73333vw;
+  color: #371a14;
+  margin-left: 1.33333vw;
+}
+
+section main .content ul li p:nth-child(3) {
+  margin-top: 2.93333vw;
+  width: 44.66667vw;
+  height: 0.26667vw;
+  background: #f3f3f3;
+  margin-left: 1.33333vw;
+}
+
+section main .content ul li p:nth-child(4) {
+  margin-top: 0.93333vw;
+  margin-left: 1.33333vw;
+  font-size: 3.33333vw;
+  line-height: 3.33333vw;
+  color: #ff5814;
+}

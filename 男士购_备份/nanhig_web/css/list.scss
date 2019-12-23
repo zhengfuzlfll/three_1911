@@ -1,0 +1,231 @@
+html,
+body {
+  height: 100%;
+}
+
+@function vw($yd) {
+  @return ($yd / 750) * 100vw;
+}
+
+@font-face {
+  font-family: "icon";
+  src: url("../iconfont/iconfont.eot?#iefix") format("embedded-opentype"),
+    url("../iconfont/iconfont.svg#icomoon") format("svg"), url("../iconfont/iconfont.woff") format("woff"),
+    url("../iconfont/iconfont.ttf") format("truetype");
+}
+
+.icon {
+  font-family: "icon";
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+
+  .content {
+    width: vw(722);
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  header {
+    height: vw(87);
+    background: #ff5001;
+
+    .header {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .iconfont1 {
+        width: vw(30);
+        height: vw(20);
+        color: #e2532b;
+      }
+
+      .input1 {
+        width: vw(480);
+        height: vw(60);
+        background: #dd3000;
+        text-align: center;
+        border-radius: vw(10);
+      }
+
+      p {
+        width: vw(30);
+        height: vw(20);
+        position: absolute;
+        left: vw(130);
+        top: vw(25);
+      }
+
+      .iconfont {
+        font-size: vw(37);
+        color: #ffb998;
+      }
+    }
+  }
+
+  nav {
+    width: 100%;
+
+    .fuzhaung {
+      width: 100%;
+      height: vw(66);
+      background: #f5f5f5;
+      border-bottom: vw(2) solid #efefef;
+
+      .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        a {
+          display: block;
+          width: vw(110);
+          height: 100%;
+          box-sizing: border-box;
+          color: #9d9d9d;
+          font-size: vw(26);
+          line-height: vw(66);
+          text-align: center;
+        }
+
+        .active {
+          color: #ff5001;
+          border-bottom: vw(6) solid #ff5001;
+        }
+      }
+    }
+
+    .biaoti {
+      width: 100%;
+      height: vw(66);
+      border-bottom: vw(2) solid #f7f7f7;
+      background: #fcfcfc;
+
+      .content {
+        display: flex;
+        justify-content: space-between;
+        padding-left: vw(35);
+        box-sizing: border-box;
+
+        span {
+          font-size: vw(26);
+          line-height: vw(66);
+          color: #3e4749;
+        }
+      }
+    }
+
+    .nav {
+      width: 100%;
+      background: #fff;
+
+      ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-around;
+        padding-top: vw(20);
+
+        li {
+          flex-shrink: 0;
+          width: 24%;
+          height: vw(150);
+          margin-bottom: vw(20);
+
+          img {
+            width: vw(107);
+            height: vw(103);
+          }
+
+          a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: vw(22);
+            line-height: vw(22);
+            color: #636363;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    flex: 1;
+    background: #f5f5f5;
+    overflow: auto;
+
+    .content {
+      padding-top: vw(25);
+
+      h1 {
+        width: 100%;
+        height: vw(36);
+        font-size: vw(30);
+        line-height: vw(36);
+        color: #0c0a1d;
+        border-left: vw(6) solid #ff5001;
+        padding-left: vw(15);
+      }
+
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        flex-wrap: wrap;
+
+        li {
+          flex-shrink: 0;
+          width: 49%;
+          height: vw(435);
+          margin-top: vw(20);
+          background: #fff;
+
+          img {
+            width: 100%;
+            height: vw(318);
+          }
+
+          p:nth-child(2) {
+            margin-top: vw(12);
+            width: 100%;
+            height: vw(28);
+            font-size: vw(28);
+            line-height: vw(28);
+            color: #371a14;
+            margin-left: vw(10);
+          }
+
+          p:nth-child(3) {
+            margin-top: vw(22);
+            width: vw(335);
+            height: vw(2);
+            background: #f3f3f3;
+            margin-left: vw(10);
+          }
+
+          p:nth-child(4) {
+            margin-top: vw(7);
+            margin-left: vw(10);
+            font-size: vw(25);
+            line-height: vw(25);
+            color: #ff5814;
+          }
+        }
+      }
+    }
+  }
+}

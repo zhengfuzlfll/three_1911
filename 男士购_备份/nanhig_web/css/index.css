@@ -1,0 +1,144 @@
+html,
+body {
+  height: 100%;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#content header {
+  height: 11.46667vw;
+  background-color: #ff5000;
+  padding: 1.33333vw 2.13333vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+#content header .iconsaoma,
+#content header .iconicon-test9 {
+  color: #eee;
+  font-size: 7.46667vw;
+  height: 7.46667vw;
+  width: 7.46667vw;
+}
+
+#content header .inputbox {
+  border-radius: 1.33333vw;
+  background-color: #dd3000;
+  box-sizing: border-box;
+  padding: 1.33333vw;
+  display: flex;
+  align-items: center;
+  width: 64vw;
+  margin-left: 13.33333vw;
+}
+
+#content header .inputbox .iconicon-test12 {
+  font-size: 5.33333vw;
+  color: #eee;
+  margin-right: 1.33333vw;
+}
+
+#content header .inputbox input {
+  background-color: transparent;
+  color: #eee;
+}
+
+#content main {
+  flex: 1;
+  overflow: auto;
+}
+
+#content main .maincontent {
+  width: 100%;
+}
+
+#content main .maincontent #carousel nav {
+  position: relative;
+  height: 40vw;
+}
+
+#content main .maincontent #carousel nav li {
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+}
+
+#content main .maincontent #carousel nav li img {
+  width: 100%;
+}
+
+#content main .maincontent #carousel nav .active {
+  display: block;
+}
+
+#content main .maincontent .goodslist {
+  padding: 2.66667vw 2vw;
+}
+
+#content main .maincontent .goodslist h2 {
+  color: #ff5000;
+  text-indent: 2.66667vw;
+  border-left: 3px solid #ff5000;
+  font-weight: 900;
+}
+
+#content main .maincontent .goodslist .gcontent {
+  margin-top: 5.33333vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#content main .maincontent .goodslist .gcontent li {
+  width: 48%;
+  flex-shrink: 1;
+  margin-bottom: 5.33333vw;
+}
+
+#content main .maincontent .goodslist .gcontent li img {
+  width: 100%;
+}
+
+#content main .maincontent .goodslist .gcontent li .title {
+  margin: 0.53333vw 0 1.33333vw;
+}
+
+#content main .maincontent .goodslist .gcontent li .price {
+  color: #ff5000;
+  font-weight: 900;
+}
+
+#content footer {
+  height: 14.66667vw;
+  width: 100%;
+  border-top: 1px solid #cccccc;
+}
+
+#content footer nav {
+  display: flex;
+  height: 100%;
+}
+
+#content footer nav li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.66667vw;
+  color: #59585e;
+}
+
+#content footer nav li .iconfont {
+  font-size: 6.4vw;
+}
+
+#content footer nav li:hover {
+  color: #ff5000;
+}
