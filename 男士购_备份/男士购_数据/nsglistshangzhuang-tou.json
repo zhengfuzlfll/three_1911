@@ -1,0 +1,94 @@
+{
+    "code": 200,
+    "datas": {
+        "class_list": [
+            {
+                "gc_id": "258",
+                "gc_name": "时尚上装",
+                "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/1/05404304196265350_max.png",
+                "child": [
+                    {
+                        "gc_id": "264",
+                        "gc_name": "T恤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421559201080766_max.jpg"
+                    },
+                    {
+                        "gc_id": "268",
+                        "gc_name": "衬衫",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421576033094876_max.jpg"
+                    },
+                    {
+                        "gc_id": "1061",
+                        "gc_name": "背心",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421572532669853_max.jpg"
+                    },
+                    {
+                        "gc_id": "1072",
+                        "gc_name": "POLO衫",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421511727887894_max.jpg"
+                    },
+                    {
+                        "gc_id": "1395",
+                        "gc_name": "防晒衣",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421512328889777_max.jpg"
+                    },
+                    {
+                        "gc_id": "265",
+                        "gc_name": "皮衣/夹克",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421525367088779_max.jpg"
+                    },
+                    {
+                        "gc_id": "267",
+                        "gc_name": "卫衣",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421568490303743_max.jpg"
+                    },
+                    {
+                        "gc_id": "274",
+                        "gc_name": "开衫",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421573633421700_max.jpg"
+                    },
+                    {
+                        "gc_id": "1064",
+                        "gc_name": "马甲",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421546938181413_max.jpg"
+                    },
+                    {
+                        "gc_id": "1068",
+                        "gc_name": "牛仔衫",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421901050207510_max.jpg"
+                    },
+                    {
+                        "gc_id": "1069",
+                        "gc_name": "棒球服",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421511293036533_max.jpg"
+                    },
+                    {
+                        "gc_id": "1070",
+                        "gc_name": "外套/风衣",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421511505123089_max.jpg"
+                    },
+                    {
+                        "gc_id": "1076",
+                        "gc_name": "针织衫/毛衣",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421512067771625_max.jpg"
+                    },
+                    {
+                        "gc_id": "1401",
+                        "gc_name": "毛呢大衣",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421512534509985_max.jpg"
+                    },
+                    {
+                        "gc_id": "1402",
+                        "gc_name": "西装",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421512771528576_max.jpg"
+                    },
+                    {
+                        "gc_id": "1407",
+                        "gc_name": "棉衣/羽绒服",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421512920464521_max.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

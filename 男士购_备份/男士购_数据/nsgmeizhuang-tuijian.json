@@ -1,0 +1,24 @@
+{
+    "datas": {
+        "goods_list": [
+            {
+                "goods_id": "226252",
+                "goods_name": "男士爽肤水补水保湿控油收缩毛孔滋润紧肤喷雾护肤化妆品须后水",
+                "goods_price": "89.00",
+                "goods_promotion_price": "89.00",
+                "goods_salenum": "2",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05889891468176460_360.jpg"
+            },
+            {
+                "goods_id": "226251",
+                "goods_name": "美白祛斑洗面奶淡斑去黄气深层清洁补水保湿男女洁面乳正品",
+                "goods_price": "68.00",
+                "goods_promotion_price": "68.00",
+                "goods_salenum": "2",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05889885875889114_360.jpg"
+            }
+        ]
+    }
+}

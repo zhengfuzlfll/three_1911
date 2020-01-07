@@ -1,0 +1,79 @@
+{
+    "code": 200,
+    "datas": {
+        "class_list": [
+            {
+                "gc_id": "472",
+                "gc_name": "护肤美妆",
+                "gc_image": "",
+                "child": [
+                    {
+                        "gc_id": "491",
+                        "gc_name": "护理套装",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422226017827893_max.jpg"
+                    },
+                    {
+                        "gc_id": "493",
+                        "gc_name": "洁面",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422252490541680_max.jpg"
+                    },
+                    {
+                        "gc_id": "495",
+                        "gc_name": "爽肤水",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422227461961484_max.jpg"
+                    },
+                    {
+                        "gc_id": "498",
+                        "gc_name": "防晒/BB霜",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422242022040577_max.jpg"
+                    },
+                    {
+                        "gc_id": "490",
+                        "gc_name": "面霜/乳液",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422226904097718_max.jpg"
+                    },
+                    {
+                        "gc_id": "489",
+                        "gc_name": "精华素/面膜",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422226683123459_max.jpg"
+                    },
+                    {
+                        "gc_id": "1250",
+                        "gc_name": "眼霜/按摩霜",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422242339096694_max.jpg"
+                    },
+                    {
+                        "gc_id": "1435",
+                        "gc_name": "祛黑头/保湿",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422253654873847_max.jpg"
+                    },
+                    {
+                        "gc_id": "1436",
+                        "gc_name": "祛痘/去痘印",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422243773647834_max.jpg"
+                    },
+                    {
+                        "gc_id": "1437",
+                        "gc_name": "收缩毛孔/祛角质",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422244135774906_max.jpg"
+                    },
+                    {
+                        "gc_id": "1433",
+                        "gc_name": "香水",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422247917397168_max.jpg"
+                    },
+                    {
+                        "gc_id": "1430",
+                        "gc_name": "定型/洗发水",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422249605292860_max.jpg"
+                    },
+                    {
+                        "gc_id": "1432",
+                        "gc_name": "肌肤护理/沐浴露",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05422227223355839_max.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

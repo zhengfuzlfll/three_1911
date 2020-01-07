@@ -1,0 +1,186 @@
+{
+    "datas": {
+        "goods_list": [
+            {
+                "goods_id": "227122",
+                "goods_name": "牛仔裤男修身小脚韩版潮流宽松夏季薄款直筒裤男士休闲裤子九分裤 浅蓝色 M",
+                "goods_price": "118.00",
+                "goods_promotion_price": "118.00",
+                "goods_salenum": "1",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05868305455213372_360.jpg"
+            },
+            {
+                "goods_id": "226724",
+                "goods_name": "潮男秋冬季裤子男韩版潮流秋季加绒运动男士休闲裤宽松潮牌束脚工装裤 深灰色 M",
+                "goods_price": "119.00",
+                "goods_promotion_price": "119.00",
+                "goods_salenum": "2",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05960745627128595_360.jpg"
+            },
+            {
+                "goods_id": "226706",
+                "goods_name": "裤子男韩版潮流秋冬季运动裤男士加绒宽松休闲束脚长裤潮牌工装裤 黑色 M",
+                "goods_price": "119.00",
+                "goods_promotion_price": "119.00",
+                "goods_salenum": "2",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05960739685357586_360.jpg"
+            },
+            {
+                "goods_id": "226511",
+                "goods_name": "4条男士内裤 男三角裤纯棉舒适透气短裤性感裤头秋冬男式短裤 A组 L",
+                "goods_price": "79.00",
+                "goods_promotion_price": "79.00",
+                "goods_salenum": "0",
+                "store_name": "男士内裤",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/46/46_05933889667177833_360.jpg"
+            },
+            {
+                "goods_id": "226499",
+                "goods_name": "4条内裤男士内裤平角裤木纤维裤头男式中腰四角短裤秋冬裤衩 A组 L",
+                "goods_price": "89.00",
+                "goods_promotion_price": "89.00",
+                "goods_salenum": "0",
+                "store_name": "男士内裤",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/46/46_05933887351637363_360.jpg"
+            },
+            {
+                "goods_id": "226479",
+                "goods_name": "男士内裤男平角裤纯棉面料秋季透气青年潮中腰四角短裤衩盒装 纯色四条 XXL",
+                "goods_price": "98.00",
+                "goods_promotion_price": "98.00",
+                "goods_salenum": "0",
+                "store_name": "男士内裤",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/46/46_05933874673308588_360.jpg"
+            },
+            {
+                "goods_id": "226467",
+                "goods_name": "男士内裤男平角裤纯棉宽松舒适透气青年潮韩版低腰性感四角短裤头 3条装【藏白+栀子+水墨】 XXL",
+                "goods_price": "89.00",
+                "goods_promotion_price": "89.00",
+                "goods_salenum": "3",
+                "store_name": "男士内裤",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/46/46_05928796153889643_360.jpg"
+            },
+            {
+                "goods_id": "226443",
+                "goods_name": "南极人4条男士内裤男纯棉质透气U凸平角裤四角裤衩男生可爱短裤头 A组 L",
+                "goods_price": "69.00",
+                "goods_promotion_price": "69.00",
+                "goods_salenum": "0",
+                "store_name": "男士内裤",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/46/46_05928785037618441_360.jpg"
+            },
+            {
+                "goods_id": "226288",
+                "goods_name": "夏季薄款男士九分裤小脚束脚裤男哈伦裤休闲裤宽松运动裤收腿裤子",
+                "goods_price": "128.00",
+                "goods_promotion_price": "128.00",
+                "goods_salenum": "2",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05852304828397121_360.jpg"
+            },
+            {
+                "goods_id": "226287",
+                "goods_name": "夏季男士休闲裤韩版修身小脚裤男裤九分裤薄款长裤子男哈伦裤男潮",
+                "goods_price": "98.00",
+                "goods_promotion_price": "98.00",
+                "goods_salenum": "5",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05852449232730473_360.jpg"
+            },
+            {
+                "goods_id": "226286",
+                "goods_name": "夏季破洞牛仔短裤男士乞丐五分裤日系宽松休闲中裤牛仔四分裤薄潮",
+                "goods_price": "89.00",
+                "goods_promotion_price": "89.00",
+                "goods_salenum": "0",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05852454099107198_360.jpg"
+            },
+            {
+                "goods_id": "226284",
+                "goods_name": "夏季薄款亚麻短裤男夏天潮流宽松休闲运动5分沙滩裤子男士五分裤",
+                "goods_price": "68.00",
+                "goods_promotion_price": "68.00",
+                "goods_salenum": "1",
+                "store_name": "潮男搭配师",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/45/45_05860528229806140_360.jpg"
+            },
+            {
+                "goods_id": "226084",
+                "goods_name": "秋冬季弹力牛仔裤男士加肥大码修身直筒长裤青年时尚胖子青年男裤 深蓝 28",
+                "goods_price": "105.00",
+                "goods_promotion_price": "105.00",
+                "goods_salenum": "1",
+                "store_name": "衣品轩",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/29/29_05308204674427768_360.jpg"
+            },
+            {
+                "goods_id": "225779",
+                "goods_name": "迷彩裤男士休闲秋冬青少年运动束脚小脚修身瘦腿裤子 黑色 M",
+                "goods_price": "119.00",
+                "goods_promotion_price": "119.00",
+                "goods_salenum": "0",
+                "store_name": "衣品家",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/34/34_05598351020393465_360.jpg"
+            },
+            {
+                "goods_id": "225754",
+                "goods_name": "休闲裤男修身秋季青少年裤口拉链休闲小脚束脚运动裤 黑色 M",
+                "goods_price": "120.00",
+                "goods_promotion_price": "120.00",
+                "goods_salenum": "0",
+                "store_name": "衣品家",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/34/34_05598347294306227_360.jpg"
+            },
+            {
+                "goods_id": "225706",
+                "goods_name": "潮人名汇日系牛仔裤男士修身秋季青少年休闲小脚裤子大码男装长裤 蓝色 M",
+                "goods_price": "119.00",
+                "goods_promotion_price": "119.00",
+                "goods_salenum": "0",
+                "store_name": "衣品家",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/34/34_05598341245824747_360.jpg"
+            },
+            {
+                "goods_id": "225685",
+                "goods_name": "潮人名汇日系牛仔裤男士休闲秋季青少年口袋刺绣修身小脚九分裤子 蓝色 29",
+                "goods_price": "99.00",
+                "goods_promotion_price": "99.00",
+                "goods_salenum": "1",
+                "store_name": "衣品家",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/34/34_05950955203896457_360.jpg"
+            },
+            {
+                "goods_id": "225458",
+                "goods_name": "初秋季韩版气质潮男纯色休闲裤修身显瘦西装裤长裤~送腰带 黑色 S（29）",
+                "goods_price": "129.00",
+                "goods_promotion_price": "129.00",
+                "goods_salenum": "0",
+                "store_name": "顺潮服装",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/18/18_05598158559299102_360.jpg"
+            },
+            {
+                "goods_id": "225330",
+                "goods_name": "秋季韩版潮男修身小脚裤口袋贴标青年弹力牛仔裤九分裤长裤 黑色 S",
+                "goods_price": "119.00",
+                "goods_promotion_price": "119.00",
+                "goods_salenum": "2",
+                "store_name": "顺潮服装",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/18/18_05598123512441996_360.jpg"
+            },
+            {
+                "goods_id": "225257",
+                "goods_name": "秋季男士运动裤休闲长裤子潮流bf风夏九分裤青少年小脚哈伦裤收口 红色 M",
+                "goods_price": "106.00",
+                "goods_promotion_price": "106.00",
+                "goods_salenum": "0",
+                "store_name": "顺潮服装",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/18/18_05598108007912985_360.jpg"
+            }
+        ]
+    }
+}

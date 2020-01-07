@@ -1,0 +1,58 @@
+{
+    "datas": {
+        "class_list": [
+            {
+                "gc_id": "152",
+                "gc_name": "流行下装",
+                "gc_image": "",
+                "child": [
+                    {
+                        "gc_id": "163",
+                        "gc_name": "小脚裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421531146574683_max.jpg"
+                    },
+                    {
+                        "gc_id": "164",
+                        "gc_name": "九分裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421513316930824_max.jpg"
+                    },
+                    {
+                        "gc_id": "165",
+                        "gc_name": "七分裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421544773976107_max.jpg"
+                    },
+                    {
+                        "gc_id": "1391",
+                        "gc_name": "五分裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421514082630135_max.jpg"
+                    },
+                    {
+                        "gc_id": "1416",
+                        "gc_name": "休闲裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421904413351787_max.jpg"
+                    },
+                    {
+                        "gc_id": "1417",
+                        "gc_name": "牛仔裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421906834660867_max.jpg"
+                    },
+                    {
+                        "gc_id": "1418",
+                        "gc_name": "运动裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421514664043978_max.jpg"
+                    },
+                    {
+                        "gc_id": "1419",
+                        "gc_name": "西裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421542993318358_max.jpg"
+                    },
+                    {
+                        "gc_id": "1421",
+                        "gc_name": "内裤",
+                        "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421538038868006_max.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

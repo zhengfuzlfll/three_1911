@@ -1,0 +1,363 @@
+{
+    "datas": {
+        "goods_list": [
+            {
+                "goods_id": "193911",
+                "goods_name": "威尔秋季薄款男裤小脚裤青年弹力男士休闲裤男修身长裤子韩版潮 蓝色 29",
+                "goods_price": "140.00",
+                "goods_promotion_price": "140.00",
+                "goods_salenum": "59",
+                "store_name": "衣品家",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/34/34_05336729642146374_360.jpg"
+            },
+            {
+                "goods_id": "193897",
+                "goods_name": "秋装新品男士抗皱减压韩版棉质弹力休闲裤修身小脚长裤 蓝色 29",
+                "goods_price": "150.00",
+                "goods_promotion_price": "150.00",
+                "goods_salenum": "43",
+                "store_name": "衣品家",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/34/34_05418958244724617_360.jpg"
+            },
+            {
+                "goods_id": "193848",
+                "goods_name": "男士青年小脚休闲裤 男 修身弹力秋季韩版纯色长裤子 深蓝色 29",
+                "goods_price": "155.00",
+                "goods_promotion_price": "155.00",
+                "goods_salenum": "28",
+                "store_name": "衣品家",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/34/34_05337334409720981_360.jpg"
+            },
+            {
+                "goods_id": "183074",
+                "goods_name": "原创男装秋季新款百搭基本款牛仔裤休闲小脚牛仔长裤男 深蓝色 M",
+                "goods_price": "155.00",
+                "goods_promotion_price": "155.00",
+                "goods_salenum": "0",
+                "store_name": "李木子的小店",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/2/2_05285479888566621_360.jpg"
+            },
+            {
+                "goods_id": "183015",
+                "goods_name": "单边破洞设计 韩版简约水洗素色小脚牛仔裤 浅蓝色 M",
+                "goods_price": "139.00",
+                "goods_promotion_price": "139.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05416065565140740_360.jpg"
+            },
+            {
+                "goods_id": "183008",
+                "goods_name": "牛仔裤 N266 蓝色 M",
+                "goods_price": "132.00",
+                "goods_promotion_price": "132.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319300921592400_360.jpg"
+            },
+            {
+                "goods_id": "182984",
+                "goods_name": "膝盖破洞铆钉装饰毛边水洗小脚牛仔裤 蓝色 M",
+                "goods_price": "128.00",
+                "goods_promotion_price": "128.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319341815291852_360.jpg"
+            },
+            {
+                "goods_id": "182977",
+                "goods_name": "秋冬新款潮男补丁牛仔裤 韩版小脚牛仔长裤 直筒裤 蓝色 28",
+                "goods_price": "108.00",
+                "goods_promotion_price": "108.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319342871558937_360.jpg"
+            },
+            {
+                "goods_id": "182965",
+                "goods_name": "秋装新款简洁绣标修身哈伦小脚牛仔裤 黑色 M",
+                "goods_price": "129.00",
+                "goods_promotion_price": "129.00",
+                "goods_salenum": "1",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05416056188857066_360.jpg"
+            },
+            {
+                "goods_id": "182957",
+                "goods_name": "裤脚雪糕刺绣纯色百搭小脚牛仔裤 蓝色 M",
+                "goods_price": "128.00",
+                "goods_promotion_price": "128.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319357682358559_360.jpg"
+            },{
+                "goods_id": "200624",
+                "goods_name": "文艺男春季新款磨毛破洞牛仔裤男修身小脚裤子港仔潮流韩版潮男裤 黑色 M",
+                "goods_price": "99.00",
+                "goods_promotion_price": "99.00",
+                "goods_salenum": "224",
+                "store_name": "顺兴男士潮流",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/15/15_05466975043710459_360.jpg"
+            },
+            {
+                "goods_id": "200534",
+                "goods_name": "青年男士休闲裤弹力小脚裤男青少年春季款修身型日系九分裤男裤子 黑色 28",
+                "goods_price": "118.00",
+                "goods_promotion_price": "118.00",
+                "goods_salenum": "160",
+                "store_name": "顺兴男士潮流",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/15/15_05466303000639995_360.jpg"
+            },
+            {
+                "goods_id": "198405",
+                "goods_name": "新款男装黑色牛仔裤男小脚裤子男冬季青少年韩版潮流行款 黑色 M",
+                "goods_price": "69.00",
+                "goods_promotion_price": "69.00",
+                "goods_salenum": "178",
+                "store_name": "好男孩潮品铺",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/39/39_05445516925375174_360.jpg"
+            },
+            {
+                "goods_id": "198055",
+                "goods_name": "裤子男韩版潮夏季森马哈伦裤日系男裤小脚裤休闲裤学生九分裤宽松 黑色 M",
+                "goods_price": "118.00",
+                "goods_promotion_price": "118.00",
+                "goods_salenum": "57",
+                "store_name": "衣品家",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/34/34_05441983436831158_360.jpg"
+            },
+            {
+                "goods_id": "197816",
+                "goods_name": "哈伦裤男新款日系青少年贴标小脚牛仔裤男复古潮牌长裤男 灰色 28",
+                "goods_price": "136.00",
+                "goods_promotion_price": "136.00",
+                "goods_salenum": "34",
+                "store_name": "好男孩潮品铺",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/39/39_05441002969130041_360.jpg"
+            },
+            {
+                "goods_id": "196635",
+                "goods_name": "春夏男休闲裤青年韩版纯棉修身九分裤男式反光条小脚裤 黑色 M",
+                "goods_price": "129.00",
+                "goods_promotion_price": "129.00",
+                "goods_salenum": "52",
+                "store_name": "李木子的小店",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/2/2_05428966544045683_360.jpg"
+            },
+            {
+                "goods_id": "196625",
+                "goods_name": "春夏男式休闲裤韩版青少年抽绳系带格子九分裤修身小脚裤 深蓝色 M",
+                "goods_price": "116.00",
+                "goods_promotion_price": "116.00",
+                "goods_salenum": "56",
+                "store_name": "李木子的小店",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/2/2_05428963928511214_360.jpg"
+            },
+            {
+                "goods_id": "196459",
+                "goods_name": "春新款男士小脚牛仔裤 韩版青年拼接牛仔裤男 黑色修身小脚裤 黑色 28",
+                "goods_price": "108.00",
+                "goods_promotion_price": "108.00",
+                "goods_salenum": "35",
+                "store_name": "李木子的小店",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/2/2_05428883476099057_360.jpg"
+            },
+            {
+                "goods_id": "195309",
+                "goods_name": "原创设计百搭休闲裤男饰边口袋撞色抽绳小脚裤日系男长裤 黑色 M",
+                "goods_price": "146.00",
+                "goods_promotion_price": "146.00",
+                "goods_salenum": "28",
+                "store_name": "衣品轩",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/29/29_05422271574813720_360.jpg"
+            },
+            {
+                "goods_id": "195305",
+                "goods_name": "原创男装新款休闲裤男黑白撞色纱卡裤日系街头百搭小脚裤 黑色 M",
+                "goods_price": "166.00",
+                "goods_promotion_price": "166.00",
+                "goods_salenum": "33",
+                "store_name": "衣品轩",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/29/29_05422270479225631_360.jpg"
+            },{
+                "goods_id": "214499",
+                "goods_name": "原创浅色水洗膝盖刀割破洞牛仔裤男宽松微垮日系哈伦裤小脚长裤子 灰色 M",
+                "goods_price": "158.00",
+                "goods_promotion_price": "158.00",
+                "goods_salenum": "263",
+                "store_name": "顺潮服装",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/18/18_05536057199938329_360.jpg"
+            },
+            {
+                "goods_id": "214121",
+                "goods_name": "韩版浅蓝膝盖破洞裤潮流修身小脚裤夏季薄款铅笔裤 蓝色 28",
+                "goods_price": "129.00",
+                "goods_promotion_price": "129.00",
+                "goods_salenum": "299",
+                "store_name": "顺潮服装",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/18/18_05533712425380556_360.jpg"
+            },
+            {
+                "goods_id": "214093",
+                "goods_name": "潮夏季薄款韩版做旧雪花洗猫须青年弹力修身小脚裤 蓝色 28",
+                "goods_price": "139.00",
+                "goods_promotion_price": "139.00",
+                "goods_salenum": "224",
+                "store_name": "顺潮服装",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/18/18_05533704428589006_360.jpg"
+            },
+            {
+                "goods_id": "214039",
+                "goods_name": "夏季破洞牛仔裤男薄款韩版弹力显瘦修身小脚裤青年简约白色九分裤 白色（不破洞款） 28",
+                "goods_price": "139.00",
+                "goods_promotion_price": "139.00",
+                "goods_salenum": "364",
+                "store_name": "顺潮服装",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/18/18_05533689967764855_360.jpg"
+            },
+            {
+                "goods_id": "203013",
+                "goods_name": "拼色潮流时尚韩版哈伦小脚休闲裤潮男青年修身显瘦男裤 藏青 M",
+                "goods_price": "75.00",
+                "goods_promotion_price": "75.00",
+                "goods_salenum": "0",
+                "store_name": "衣品轩",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/29/29_05482700194506070_360.jpg"
+            },
+            {
+                "goods_id": "202469",
+                "goods_name": "夏新款男士日系破洞乞丐牛仔裤潮男韩版哈伦九分裤小脚裤 图色 28",
+                "goods_price": "115.00",
+                "goods_promotion_price": "115.00",
+                "goods_salenum": "125",
+                "store_name": "顺兴男士潮流",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/15/15_05479254625747696_360.jpg"
+            },
+            {
+                "goods_id": "202333",
+                "goods_name": "新款青年直筒牛仔裤男士韩版小脚裤林弯弯复古哈伦裤子潮 蓝色 28",
+                "goods_price": "108.00",
+                "goods_promotion_price": "108.00",
+                "goods_salenum": "288",
+                "store_name": "顺潮服装",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/18/18_05479000824309490_360.jpg"
+            },
+            {
+                "goods_id": "201257",
+                "goods_name": "夏季新款时尚百搭休闲潮流9分黑色青少年牛仔裤男小脚韩版潮学生 蓝色 28",
+                "goods_price": "89.00",
+                "goods_promotion_price": "89.00",
+                "goods_salenum": "255",
+                "store_name": "顺兴男士潮流",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/15/15_05472100402604613_360.jpg"
+            },
+            {
+                "goods_id": "200933",
+                "goods_name": "男士小脚牛仔裤春夏季 港风青少年裤日系港风纯色牛仔裤男潮 黑色 M",
+                "goods_price": "96.00",
+                "goods_promotion_price": "96.00",
+                "goods_salenum": "133",
+                "store_name": "顺兴男士潮流",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/15/15_05471246589090206_360.jpg"
+            },
+            {
+                "goods_id": "200806",
+                "goods_name": "春夏林弯弯日系潮流补丁撞色灯芯绒九分牛仔裤男宽松显瘦哈伦裤潮 黑色 M（28.29）",
+                "goods_price": "99.00",
+                "goods_promotion_price": "99.00",
+                "goods_salenum": "213",
+                "store_name": "顺兴男士潮流",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/15/15_05470467276091377_360.jpg"
+            }, {
+                "goods_id": "182950",
+                "goods_name": "百搭款单边膝盖破洞深蓝小脚百搭秋冬牛仔裤 蓝色 M",
+                "goods_price": "128.00",
+                "goods_promotion_price": "128.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319359801883570_360.jpg"
+            },
+            {
+                "goods_id": "182946",
+                "goods_name": "绝佳瘦腿版型 韩版男士水洗破洞修身小脚牛仔裤 蓝色 M",
+                "goods_price": "148.00",
+                "goods_promotion_price": "148.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319362595500893_360.jpg"
+            },
+            {
+                "goods_id": "182942",
+                "goods_name": "单边膝盖破洞小脚修身牛仔裤 蓝色 M",
+                "goods_price": "128.00",
+                "goods_promotion_price": "128.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319390678733015_360.jpg"
+            },
+            {
+                "goods_id": "182927",
+                "goods_name": "侧边个性口袋小脚裤潮男哈伦裤运动休闲裤 蓝色 M",
+                "goods_price": "106.00",
+                "goods_promotion_price": "106.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319395422675518_360.jpg"
+            },
+            {
+                "goods_id": "182918",
+                "goods_name": "新款男士夏秋牛仔九分裤 潮男日系复古哈伦牛仔长裤 浅蓝色 28",
+                "goods_price": "129.00",
+                "goods_promotion_price": "129.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05319397184322527_360.jpg"
+            },
+            {
+                "goods_id": "182906",
+                "goods_name": "新款修身小脚牛仔裤男士时尚休闲长裤裤子韩版纯色男裤 蓝色 28",
+                "goods_price": "93.00",
+                "goods_promotion_price": "93.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05314848847388968_360.jpg"
+            },
+            {
+                "goods_id": "182897",
+                "goods_name": "新款小脚牛仔裤男士秋 韩版修身微弹牛仔裤青少年长裤男 蓝色 28",
+                "goods_price": "108.00",
+                "goods_promotion_price": "108.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05314853140843947_360.jpg"
+            },
+            {
+                "goods_id": "182880",
+                "goods_name": "新款弹力小脚牛仔裤男士 休闲时尚修身长裤韩版男款裤子 蓝色 28",
+                "goods_price": "108.00",
+                "goods_promotion_price": "108.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05314860815810750_360.jpg"
+            },
+            {
+                "goods_id": "182871",
+                "goods_name": "新款韩版修身牛仔裤男士 时尚小脚裤青少年休闲长裤裤子 蓝色 28",
+                "goods_price": "108.00",
+                "goods_promotion_price": "108.00",
+                "goods_salenum": "0",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05314862268141714_360.jpg"
+            },
+            {
+                "goods_id": "182867",
+                "goods_name": "洋气设计后跟裤脚刺绣小脚修身百搭牛仔裤 蓝色 M",
+                "goods_price": "126.00",
+                "goods_promotion_price": "126.00",
+                "goods_salenum": "274",
+                "store_name": "原创前线",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/33/33_05415521245579522_360.jpg"
+            }
+        ]
+    }
+}

@@ -1,0 +1,196 @@
+{
+    "code": 200,
+    "hasmore": true,
+    "page_total": 3,
+    "datas": {
+        "goods_list": [
+            {
+                "goods_id": "222590",
+                "goods_name": "夏季新款篮球鞋男高帮防滑运动战靴学生外场篮球鞋 黑红 39",
+                "goods_price": "119.00",
+                "goods_promotion_price": "119.00",
+                "goods_salenum": "0",
+                "store_name": "MG鞋店",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/41/41_05550922360610562_360.jpg"
+            },
+            {
+                "goods_id": "222566",
+                "goods_name": "四季高帮男士篮球鞋耐磨防滑球鞋经典休闲运动鞋减震战靴 黑红 39",
+                "goods_price": "99.00",
+                "goods_promotion_price": "99.00",
+                "goods_salenum": "0",
+                "store_name": "MG鞋店",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/41/41_05550918858896371_360.jpg"
+            },
+            {
+                "goods_id": "222526",
+                "goods_name": "夏季低帮鸳鸯篮球鞋男透气网面战靴减震耐磨篮球鞋实战学生球鞋男 黑蓝 39",
+                "goods_price": "159.00",
+                "goods_promotion_price": "159.00",
+                "goods_salenum": "0",
+                "store_name": "MG鞋店",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/41/41_05550911673696660_360.jpg"
+            },
+            {
+                "goods_id": "211276",
+                "goods_name": "韩版夏季男士高帮鞋青年运动鞋高邦篮球鞋潮流学生内增高板鞋子潮 黑红 39",
+                "goods_price": "129.00",
+                "goods_promotion_price": "129.00",
+                "goods_salenum": "33",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05530092462429735_360.jpg"
+            },
+            {
+                "goods_id": "190240",
+                "goods_name": "361度篮球鞋男正品新款耐磨男鞋超轻运动鞋 紫/白 39",
+                "goods_price": "359.00",
+                "goods_promotion_price": "359.00",
+                "goods_salenum": "0",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05417856903888591_360.jpg"
+            },
+            {
+                "goods_id": "190189",
+                "goods_name": "361度男鞋耐磨高帮篮球鞋男 黑红 39",
+                "goods_price": "389.00",
+                "goods_promotion_price": "389.00",
+                "goods_salenum": "0",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05417841014271875_360.jpg"
+            },
+            {
+                "goods_id": "190094",
+                "goods_name": "361度男鞋高帮篮球鞋冬季实战篮球战靴 白/黑 39",
+                "goods_price": "339.00",
+                "goods_promotion_price": "339.00",
+                "goods_salenum": "0",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05327935638607834_360.jpg"
+            },
+            {
+                "goods_id": "189727",
+                "goods_name": "特步男鞋篮球鞋运动鞋春夏季缓震耐磨轻便舒适男子专业篮球场地鞋 黑红 40",
+                "goods_price": "339.00",
+                "goods_promotion_price": "339.00",
+                "goods_salenum": "0",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05417787777548263_360.jpg"
+            },
+            {
+                "goods_id": "189670",
+                "goods_name": "特步男鞋篮球鞋正品经典高帮减震运动鞋新款实战外场战靴 白兰 39",
+                "goods_price": "299.00",
+                "goods_promotion_price": "299.00",
+                "goods_salenum": "0",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05417782434385812_360.jpg"
+            },
+            {
+                "goods_id": "189604",
+                "goods_name": "特步男鞋正品男子篮球运动鞋缓震耐磨轻便舒适男子专业篮球场地鞋 黑红 39",
+                "goods_price": "339.00",
+                "goods_promotion_price": "339.00",
+                "goods_salenum": "0",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05417707436113288_360.jpg"
+            },{
+                "goods_id": "189247",
+                "goods_name": "特步冬季男鞋运动鞋新款防滑皮面高帮板鞋潮流男士休闲鞋 黑 41",
+                "goods_price": "256.00",
+                "goods_promotion_price": "256.00",
+                "goods_salenum": "0",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05417332379884252_360.jpg"
+            },
+            {
+                "goods_id": "189229",
+                "goods_name": "特步男鞋篮球鞋春季新款男士高帮耐磨篮球鞋硬地战靴运动鞋子 黑红 40",
+                "goods_price": "316.00",
+                "goods_promotion_price": "316.00",
+                "goods_salenum": "0",
+                "store_name": "南国鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/35/35_05330643578013206_360.jpg"
+            },
+            {
+                "goods_id": "187911",
+                "goods_name": "韩版时尚男士运动跑步男鞋耐磨透气篮球鞋学生流行体育用品鞋 黑红 39",
+                "goods_price": "108.00",
+                "goods_promotion_price": "108.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05417209829775344_360.jpg"
+            },
+            {
+                "goods_id": "187815",
+                "goods_name": "新款四季运动跑步男鞋减震篮球鞋耐磨透气潮流男士鞋单鞋子 黑色/白 39",
+                "goods_price": "138.00",
+                "goods_promotion_price": "138.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05417194696498826_360.jpg"
+            },
+            {
+                "goods_id": "187443",
+                "goods_name": "乔丹篮球鞋男正品高帮战靴运动鞋耐磨防滑 红色 39",
+                "goods_price": "359.00",
+                "goods_promotion_price": "359.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05417164388325596_360.jpg"
+            },
+            {
+                "goods_id": "187429",
+                "goods_name": "乔丹正品耐磨篮球鞋男新品防滑潮流高帮 黑色/ 39",
+                "goods_price": "299.00",
+                "goods_promotion_price": "299.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05348764287558705_360.jpg"
+            },
+            {
+                "goods_id": "187408",
+                "goods_name": "乔丹正品篮球鞋男秋冬季新款运动鞋防滑耐磨减震中帮 黑色/红 39",
+                "goods_price": "269.00",
+                "goods_promotion_price": "269.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05417159529283703_360.jpg"
+            },
+            {
+                "goods_id": "187369",
+                "goods_name": "乔丹正品新款抗冲击篮球鞋运动潮男鞋秋季减震耐磨防滑舒适 蓝色 39",
+                "goods_price": "169.00",
+                "goods_promotion_price": "169.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05348779189318927_360.jpg"
+            },
+            {
+                "goods_id": "187336",
+                "goods_name": "乔丹时尚男式大码篮球鞋高档优质款减震透气防滑篮球鞋 黑/红 39",
+                "goods_price": "269.00",
+                "goods_promotion_price": "269.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05348798617661028_360.jpg"
+            },
+            {
+                "goods_id": "187324",
+                "goods_name": "乔丹篮球鞋男正品折扣新款运动鞋 蓝色 39",
+                "goods_price": "269.00",
+                "goods_promotion_price": "269.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05348800704417239_360.jpg"
+            },{
+                "goods_id": "187306",
+                "goods_name": "乔丹篮球鞋男正品秋冬季新款运动鞋男鞋防滑耐磨减震中帮 黑色/极致红 39",
+                "goods_price": "269.00",
+                "goods_promotion_price": "269.00",
+                "goods_salenum": "0",
+                "store_name": "左岸鞋吧",
+                "goods_image_url": "https://www.nanshig.com/data/upload/shop/store/goods/28/28_05348805760525390_360.jpg"
+            }
+        ]
+    }
+}

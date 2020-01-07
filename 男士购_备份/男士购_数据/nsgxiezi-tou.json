@@ -1,0 +1,62 @@
+{
+    "class_list": [
+        {
+            "gc_id": "4",
+            "gc_name": "潮款鞋靴",
+            "gc_image": "",
+            "child": [
+                {
+                    "gc_id": "12",
+                    "gc_name": "板鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421515489022728_max.jpg"
+                },
+                {
+                    "gc_id": "13",
+                    "gc_name": "帆布鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421515624743375_max.jpg"
+                },
+                {
+                    "gc_id": "15",
+                    "gc_name": "拖鞋/凉鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421515766189794_max.jpg"
+                },
+                {
+                    "gc_id": "17",
+                    "gc_name": "豆豆鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421515910997510_max.jpg"
+                },
+                {
+                    "gc_id": "24",
+                    "gc_name": "懒人鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421516109804494_max.jpg"
+                },
+                {
+                    "gc_id": "1422",
+                    "gc_name": "休闲鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421570496908002_max.jpg"
+                },
+                {
+                    "gc_id": "1423",
+                    "gc_name": "篮球鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421516527306585_max.jpg"
+                },
+                {
+                    "gc_id": "1424",
+                    "gc_name": "运动鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421519801779912_max.jpg"
+                },
+                {
+                    "gc_id": "1426",
+                    "gc_name": "皮鞋",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421517459280004_max.jpg"
+                },
+                {
+                    "gc_id": "1428",
+                    "gc_name": "高帮/靴子",
+                    "gc_image": "https://www.nanshig.com/data/upload/other/goods_class/2/05421517602095464_max.jpg"
+                }
+            ]
+        }
+    ]
+}
+}
